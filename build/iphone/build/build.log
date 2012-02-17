@@ -1,0 +1,1333 @@
+================================================================================
+Appcelerator Titanium Diagnostics Build Log
+The contents of this file are useful to send to Appcelerator Support if
+reporting an issue to help us understand your environment, build settings
+and aid in debugging. Please attach this log to any issue that you report.
+================================================================================
+
+Starting build at 02/16/12 21:47
+
+Build details:
+
+   timestamp=01/30/12 21:46
+   module_apiversion=2
+   version=1.9.0
+   githash=9db4995
+
+
+Script arguments:
+   /Library/Application Support/Titanium/mobilesdk/osx/1.9.0.v20120130214634/iphone/builder.py
+   install
+   4.3
+   /Users/alanleard/TiApps/ShopBrag
+   com.shopbrag.app
+   ShopBrag
+   F08BF6B7-6814-4C6E-ABD7-415DC9D075D1
+   Alan Leard (MFBVN3N397)
+   iphone
+
+Building from: /Library/Application Support/Titanium/mobilesdk/osx/1.9.0.v20120130214634/iphone
+Platform: Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386
+
+Xcode path is: /Developer
+
+Reading provisioning profile:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationIdentifierPrefix</key>
+	<array>
+		<string>88W29S6XJ2</string>
+	</array>
+	<key>CreationDate</key>
+	<date>2012-02-16T23:16:35Z</date>
+	<key>DeveloperCertificates</key>
+	<array>
+		<data>
+		MIIFaTCCBFGgAwIBAgIId5Hk069u5jkwDQYJKoZIhvcNAQEFBQAwgZYxCzAJ
+		BgNVBAYTAlVTMRMwEQYDVQQKDApBcHBsZSBJbmMuMSwwKgYDVQQLDCNBcHBs
+		ZSBXb3JsZHdpZGUgRGV2ZWxvcGVyIFJlbGF0aW9uczFEMEIGA1UEAww7QXBw
+		bGUgV29ybGR3aWRlIERldmVsb3BlciBSZWxhdGlvbnMgQ2VydGlmaWNhdGlv
+		biBBdXRob3JpdHkwHhcNMTEwODAxMTc0OTAwWhcNMTIwNzMxMTc0OTAwWjBd
+		MRowGAYKCZImiZPyLGQBAQwKVzhZRVNXOTdFSzEyMDAGA1UEAwwpaVBob25l
+		IERldmVsb3BlcjogQWxhbiBMZWFyZCAoTUZCVk4zTjM5NykxCzAJBgNVBAYT
+		AlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAue9hizA1V5eK
+		D502w6l4vG1e4wa4GGXVnvYlSlEKU+iL6yYZXUnJISChnHKsjA0on3TQsXDm
+		a4S5WD/yJwwILlWwbFfarHZY3scn1Zag8Mts8QPVl2n6nbm80uMf3lVwUmGA
+		oXDs/aLuGb/2GT+4VQ4XcV6dH6a9V8xRzLgZjY6jzrG3fjBI4NQlozeKC5zJ
+		oGkNzRqGNZ1K/YerjSIzDN+W0fWiCK+S0KkU+iDptSu3HQkmryCNdf8S1MD9
+		kwbUFSpv1Ep0B6x0OhtSf7YRrqgDT0+epK401tdTfqm4l6TvW5HsaSll39wO
+		p83sIu0VpztYbbu3ABpgAiFnS0RmHQIDAQABo4IB8TCCAe0wHQYDVR0OBBYE
+		FGy/LkXXxKC66UqQYy+20ci/ZHSIMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgw
+		FoAUiCcXCam2GGCL7Ou69kdZxVJUo7cwggEPBgNVHSAEggEGMIIBAjCB/wYJ
+		KoZIhvdjZAUBMIHxMIHDBggrBgEFBQcCAjCBtgyBs1JlbGlhbmNlIG9uIHRo
+		aXMgY2VydGlmaWNhdGUgYnkgYW55IHBhcnR5IGFzc3VtZXMgYWNjZXB0YW5j
+		ZSBvZiB0aGUgdGhlbiBhcHBsaWNhYmxlIHN0YW5kYXJkIHRlcm1zIGFuZCBj
+		b25kaXRpb25zIG9mIHVzZSwgY2VydGlmaWNhdGUgcG9saWN5IGFuZCBjZXJ0
+		aWZpY2F0aW9uIHByYWN0aWNlIHN0YXRlbWVudHMuMCkGCCsGAQUFBwIBFh1o
+		dHRwOi8vd3d3LmFwcGxlLmNvbS9hcHBsZWNhLzBNBgNVHR8ERjBEMEKgQKA+
+		hjxodHRwOi8vZGV2ZWxvcGVyLmFwcGxlLmNvbS9jZXJ0aWZpY2F0aW9uYXV0
+		aG9yaXR5L3d3ZHJjYS5jcmwwDgYDVR0PAQH/BAQDAgeAMBYGA1UdJQEB/wQM
+		MAoGCCsGAQUFBwMDMBMGCiqGSIb3Y2QGAQIBAf8EAgUAMA0GCSqGSIb3DQEB
+		BQUAA4IBAQBHyK8Yei8hcpXqJf2zPiS0rIom1PIjFEEaa7N9g5NYl42P8Kaq
+		BqkdM65C0KC7V4MH4V3HrTM6+q2mW3rCX/Io6DKJQyXRGteW4HQLBgeSnU7j
+		nqPZOVAKZsGL+maMLj2MdXlxYDttp+f2jEuCgb/MmoNtj2x+KWk5ZrTbNh8/
+		Tn8SuIuaAZyafi1MGFxKiGM0ZmJwhau+EuvKKnZJ4xhzjsSG3tXRlmPDVpoA
+		D4/VB1sRL/u9V6i2E56bR/kUNg8r0gyqdHCRI7uG6K3M+8KUBfVht0yOQVW6
+		6wuXHfBrJl7NLn9akzPWgJ00bqmaOUcHPZj+74kvYQjW9lmsc9Pw
+		</data>
+	</array>
+	<key>Entitlements</key>
+	<dict>
+		<key>application-identifier</key>
+		<string>88W29S6XJ2.com.shopbrag.app</string>
+		<key>get-task-allow</key>
+		<true/>
+		<key>keychain-access-groups</key>
+		<array>
+			<string>88W29S6XJ2.*</string>
+		</array>
+	</dict>
+	<key>ExpirationDate</key>
+	<date>2013-02-15T23:16:35Z</date>
+	<key>Name</key>
+	<string>ShopBrag</string>
+	<key>ProvisionedDevices</key>
+	<array>
+		<string>41cfbb1c67d43ed03b85e42d9dd7a7d554a316de</string>
+		<string>0680b7c9c356b8b7e07d80374966f0805fa5232a</string>
+		<string>be78c8983641ece5d1846122d98a5510b77e4bb3</string>
+		<string>fd0c763be3056c7cbafae59430a288d6a1d1eaec</string>
+		<string>7c3aa991dd8a5ab2147a07d0088d24213bafe4cf</string>
+		<string>a0c97427cd99727f9dfb1b00a122232e65c893d7</string>
+		<string>6c2e48ffa329c41af6fa29bce5841a769d5b2ec2</string>
+		<string>cad3fca5c097a7eb52a8c9c40b1c51a1ff335636</string>
+		<string>c237dffc7ee8141b3f9749fed4e4120346d6467b</string>
+		<string>a934c80e4dd12e5f938b0ee0fad2d22f71f196c1</string>
+		<string>875df73b83f20ded930519f55ea969c461d2f146</string>
+		<string>3aa9777065b603b4fc9fe9efae7d9d3666da8492</string>
+		<string>d34d0c3eafd623128c2620dcd99bf9f25ce5e7ce</string>
+		<string>e9067ef98e3c32907404a6923ee6d1f73dafa693</string>
+		<string>446fe6867c21a4c42ca01fdd206d0da78db16325</string>
+		<string>3a0e2325092f1427767b158accd9fdff582e9893</string>
+		<string>497ad2b01d1d39da4245c7a03518274dd9d6ea22</string>
+		<string>d4678bd325cdb70b26fc78ab62a9e0b1e4d025b8</string>
+		<string>c645f91815810a0fcd4862aa1138fed5f546eb71</string>
+		<string>4ada862146bbf2a89e18de4108ae12789a44cdb6</string>
+		<string>26375690a91dfd4eb0989e4e9e9488a48ec1b7c8</string>
+		<string>130890fe378b064a769b1a9cfbe9f08c2941d7fa</string>
+		<string>61a10a3c057c7f4cec94c24dbb520ab00d372292</string>
+		<string>e39dcb303efbd4a05d6fbcfb78bf0f086db6bdf9</string>
+		<string>f6c98ea5b942131558a79295b50b65be3f060f8f</string>
+		<string>7ae43b86b283dc1408adfb75ffbf635402cb1fe1</string>
+		<string>c2bdd28debd0b2eff28bc2e9723867cd3ac192a5</string>
+		<string>a2d69670a2d9acb8c63a909c55603f2fe8db65d3</string>
+		<string>d1463b19927be5f08859c131cd5ac4ec98508d2d</string>
+		<string>8edbcecb1b6964c2ad5e625de0b7787b6f538fe9</string>
+		<string>13d914dc2fcb6e8f43aa41498f1da7fd69c33546</string>
+		<string>c7052479f0c519ac01c140fa1f10cd36bae31917</string>
+		<string>4ffdf52aed3b853767ca21790eb59f55ce602451</string>
+		<string>7c2663f6bdb2c4450fdc14b66934057b28ea0549</string>
+		<string>8dc972d550d6b300f1452d0d2031cb666936c703</string>
+		<string>ec514351a11f20e93778e6be4ff349bb78f44642</string>
+		<string>8394e345557de6b4f027cbd4b5dee95d3c9a3033</string>
+		<string>65ad5cb657c4f52eec966378f0cd875a81b70646</string>
+		<string>efabf6f798e5742f1df342969647541bdf914f64</string>
+		<string>6f8987867ebec92c0b5e83c33c265f8883c90466</string>
+		<string>c4e539e17aa8632334d944a1450f0543ef904c3b</string>
+		<string>78aa610ce5db7cd041ff2e854f07ccf94851281b</string>
+		<string>b1a425af474fc89da12807112ab3bbfe85821f3e</string>
+		<string>938b05235353ab4f1571435e0691326d0ddf8db7</string>
+		<string>61eb0eb6752b9d21947cbe0cb7c948b722f0b9dc</string>
+		<string>2d7a8cf0b38ad8ff71e44f66343349c4af57ae02</string>
+		<string>dc086bb7044183de63478cd12feea52c18851f7e</string>
+		<string>44a3abaf4d3eb4c7ab38253c2e13d337e13d6b2b</string>
+		<string>afc08f9c26dbc3d3df77950e07ce7921abc51ed9</string>
+		<string>c83dcacc100d829daa6991982ef84febf1b122b4</string>
+		<string>3240259b1851854bbf9147f2430f6cfbd643108f</string>
+		<string>8cb75df84dfc4f6719db802caa34cc0f4dbd4377</string>
+		<string>5e1cbad6884b36dae39ab6625a18b87723a9f05c</string>
+		<string>163063beeeb612db1cc8df602638df033347d3ff</string>
+		<string>6f3d62c64acaae4592588a275217dca275a6a375</string>
+		<string>fe4287d7fa7199ae6cb1e4f39b5cdbad00a3d9c4</string>
+		<string>d6832f00afc531a22a617e54afb64ec5039227d6</string>
+	</array>
+	<key>TeamIdentifier</key>
+	<array>
+		<string>88W29S6XJ2</string>
+	</array>
+	<key>TimeToLive</key>
+	<integer>365</integer>
+	<key>UUID</key>
+	<string>F08BF6B7-6814-4C6E-ABD7-415DC9D075D1</string>
+	<key>Version</key>
+	<integer>1</integer>
+</dict>
+</plist>
+
+githash=9db4995, existing_git_hash=None
+forcing rebuild since libhash (None) not matching (086dba02ebf4956989e6555c3d754630)
+Performing full rebuild
+Generated the following stylecode code:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>classes</key>
+		<dict>
+</dict>
+
+		<key>classes_density</key>
+		<dict>
+</dict>
+
+		<key>ids</key>
+		<dict>
+</dict>
+
+		<key>ids_density</key>
+		<dict>
+</dict>
+
+		<key>tags</key>
+		<dict>
+</dict>
+
+		<key>tags_density</key>
+		<dict>
+</dict>
+
+	</dict>
+</plist>
+Performing clean build...
+
+File listing for /Users/alanleard/TiApps/ShopBrag
+
+  .DS_Store                                                                                                                [6148]  
+  .gitignore                                                                                                               [4]     
+  .project                                                                                                                 [547]   
+  build.log                                                                                                                [754]   
+  CHANGELOG.txt                                                                                                            [95]    
+  LICENSE                                                                                                                  [11485] 
+  LICENSE.txt                                                                                                              [92]    
+  manifest                                                                                                                 [191]   
+  README                                                                                                                   [551]   
+  tiapp.xml                                                                                                                [1300]  
+  .git/COMMIT_EDITMSG                                                                                                      [13]    
+  .git/config                                                                                                              [219]   
+  .git/description                                                                                                         [73]    
+  .git/HEAD                                                                                                                [23]    
+  .git/index                                                                                                               [20096] 
+  .git/hooks/applypatch-msg.sample                                                                                         [452]   
+  .git/hooks/commit-msg.sample                                                                                             [896]   
+  .git/hooks/post-commit.sample                                                                                            [160]   
+  .git/hooks/post-receive.sample                                                                                           [552]   
+  .git/hooks/post-update.sample                                                                                            [189]   
+  .git/hooks/pre-applypatch.sample                                                                                         [398]   
+  .git/hooks/pre-commit.sample                                                                                             [1578]  
+  .git/hooks/pre-rebase.sample                                                                                             [4951]  
+  .git/hooks/prepare-commit-msg.sample                                                                                     [1239]  
+  .git/hooks/update.sample                                                                                                 [3611]  
+  .git/info/exclude                                                                                                        [240]   
+  .git/logs/HEAD                                                                                                           [163]   
+  .git/logs/refs/heads/master                                                                                              [163]   
+  .git/logs/refs/remotes/origin/master                                                                                     [147]   
+  .git/objects/03/05016057b9998ca76a57c2d1a479c65e807720                                                                   [80]    
+  .git/objects/06/f895356c294735a1a3bae3e8963b9b8551101e                                                                   [208]   
+  .git/objects/08/2688aee6a06e8cfff7d98571a9749e54baa220                                                                   [517597]
+  .git/objects/09/09c86087fcb09b59ff8db9621f1528fd585067                                                                   [263]   
+  .git/objects/0a/8b5861d308db8eb56145081d0bbb96b1c81242                                                                   [52]    
+  .git/objects/0d/66ee0a467ecef80e6268f9dc2050305f6d7b85                                                                   [1251]  
+  .git/objects/0d/e2effdaabe4b0f5ef183decbf3e5b38bd129d9                                                                   [8692]  
+  .git/objects/0e/365cfaa8b37ffb641d0ecc7f62f8e6b097ca7b                                                                   [1038764]
+  .git/objects/0e/72ee9cb35b1ea7fd157d00f53e63fd3376d70e                                                                   [1057]  
+  .git/objects/0e/c8940170c394f89bd564d6a0ac26e3130837d1                                                                   [4546]  
+  .git/objects/0f/0068fd2601dec51d3d0f727f7f87ff58b2649f                                                                   [114]   
+  .git/objects/10/a4679393fc57673eac0851aea6a4dd5404040c                                                                   [704]   
+  .git/objects/11/92c484cddf8baf16d9b53eae327590bd98d79f                                                                   [868]   
+  .git/objects/13/75f8ce3c8ceaf7cb24470f05034d2f83e7d6d5                                                                   [7594]  
+  .git/objects/13/f7238add8fec4aae574d998f90efbf822fabd6                                                                   [1027]  
+  .git/objects/14/fc341ac869f3c22cbe4ec111948b61c7def9d9                                                                   [21763] 
+  .git/objects/17/f18290de10055cffe8f59d41e95266bbec0598                                                                   [177]   
+  .git/objects/18/5d587e8fd3e4c414519e30fbe931653cb9eae1                                                                   [19022] 
+  .git/objects/19/d2a7e50bb285f418c8eb6b0cccb714a71d1a94                                                                   [58]    
+  .git/objects/1b/122cbfca6461d9d1c665ed50d4dd66e888191d                                                                   [7648]  
+  .git/objects/1d/c9c102318dc703e3ca592d24f168582eaacc06                                                                   [1659]  
+  .git/objects/1e/09a4449b3e95e362524ce4e2bfc0440bce3f8e                                                                   [298]   
+  .git/objects/1e/14fc4501a946f9269538f4c75163726e07b7a8                                                                   [1910]  
+  .git/objects/21/46bf4cf11e025b59403cac86d29701da8e5be2                                                                   [320297]
+  .git/objects/21/8b2c3d67d0c056eaeadcdaf6f20a72229daf50                                                                   [89]    
+  .git/objects/25/b590abcb9b488f952fb2d133718e441cc373d9                                                                   [380]   
+  .git/objects/26/642e2417cf0231fb3665e17b8278c3467060c6                                                                   [94]    
+  .git/objects/27/2f6065ebf81908fabaeb1fb3f0165afc7796d2                                                                   [274066]
+  .git/objects/27/c1962924d4373923f66a378085a2ea7e7b4a8e                                                                   [56]    
+  .git/objects/28/976c8680a455227bab8102bcc624492c0db793                                                                   [1179]  
+  .git/objects/29/03d5c5fe7e04c6930cf9832cd20e299bd04789                                                                   [342]   
+  .git/objects/29/2d95707e0b1275c236a6f2ec40424fabe537fe                                                                   [306]   
+  .git/objects/2a/52427efa24928849c7999d267dec5030c91e8f                                                                   [418]   
+  .git/objects/2a/b10df9a193992ff5f87a89c9214b58693dedb9                                                                   [47509] 
+  .git/objects/2b/efe267c75778555bb8c5e432aa16a60c835a04                                                                   [566]   
+  .git/objects/2c/2bebe278280b57a274ce21f076d8beffafc203                                                                   [30205] 
+  .git/objects/2c/2ebcdd85f586843f6612e7f11cf2d9ffc67095                                                                   [395]   
+  .git/objects/2c/338e25871a5b0dc0440f70a366069d63c1eed1                                                                   [146]   
+  .git/objects/2d/8bc1225bdd8cbcbdc1e2d410a14c24b272db2d                                                                   [507]   
+  .git/objects/2f/fe9fef7367250b6b305ec2eb13b804824f0ace                                                                   [10684] 
+  .git/objects/30/54aa195108964056f6398915b885c054f67fb8                                                                   [56]    
+  .git/objects/31/90f698acbbf5ee85e05db4be09cdaa1607c9be                                                                   [211]   
+  .git/objects/32/640436f983790232a111fd02cb216e050211bb                                                                   [229972]
+  .git/objects/33/00a00a97c1d8e2d854bdd51a14b29068d94d19                                                                   [11036] 
+  .git/objects/35/718954b8445c402973d7efec9906337e960c53                                                                   [514]   
+  .git/objects/35/c8ea626a680237f84caf0787668fdfe870134a                                                                   [59]    
+  .git/objects/3a/8318897d2c451cb09c8e908063cc2098853f7b                                                                   [182]   
+  .git/objects/3a/83cc70ef9504ab6385a8208e62176465b2dd7b                                                                   [123495]
+  .git/objects/3a/ea18a01448aab38adb31ddb0fd4c4f98d8ab43                                                                   [418]   
+  .git/objects/3b/4d5e4e4f6d2817a80283905b47fa155114cd5f                                                                   [3200]  
+  .git/objects/3b/9f2a3f1a0ef5a705465b7f50266d722882cf39                                                                   [545]   
+  .git/objects/3b/b50536d05b061e972f5d57ae328099189c2525                                                                   [305]   
+  .git/objects/3c/3b164517a16dc8ba9a2414e70b900dc96dc913                                                                   [11541] 
+  .git/objects/3c/74f57ad476c4bd576f67b6657bfef2c7990ed6                                                                   [2732]  
+  .git/objects/3d/50f27fc6ff7d7724ef5a05266d193c0c012068                                                                   [693]   
+  .git/objects/3d/928b35e87a5b9e21ae6f349dd3337e44220319                                                                   [338538]
+  .git/objects/3f/ff4d683ae4fc510081b0d36611bd211926942b                                                                   [951596]
+  .git/objects/40/32f6ae1f05a268ee08c2083ea7825f625313b4                                                                   [477]   
+  .git/objects/40/8275bb57dd1632ae7c7d38584a210f2f7f2097                                                                   [451]   
+  .git/objects/41/24b1d3278667e6471ace552d4f14f84c14095e                                                                   [93]    
+  .git/objects/42/153c78d97ad337d215fe4253c323563b3f6041                                                                   [46]    
+  .git/objects/42/6e1f0af1f26da251e1e11ade51cc66e82303ad                                                                   [551858]
+  .git/objects/42/b09c6a5bd5cc5508559089904f16a4b67b3bb3                                                                   [408]   
+  .git/objects/44/af70e6a41324dbb0870b76ca8fe979b650d467                                                                   [2849]  
+  .git/objects/45/a1c09cbaeca269da6394f51bd27118428b2ca6                                                                   [155]   
+  .git/objects/45/cddf04096cafa5d4a9024c58559095071920e0                                                                   [798]   
+  .git/objects/45/eb179952c3a49f6aea52a8c0562310ea20cc36                                                                   [506]   
+  .git/objects/46/0c63e423b98f203a6fc52b253b8975fdad5195                                                                   [1399]  
+  .git/objects/49/750e525757454e967e9c9aff8355a6e797677b                                                                   [5377]  
+  .git/objects/4b/8b24a75e35d81fef2e31a01d596fd26b17de74                                                                   [318]   
+  .git/objects/4c/5ad068a56e98b891f2d241654f7caf673bb74d                                                                   [122]   
+  .git/objects/4c/e3528ea5cd060e04a860afa2edd1b7be93b0cb                                                                   [994]   
+  .git/objects/4d/9d17248f33eb00b0ad88e21c0f5973b496f0ff                                                                   [871]   
+  .git/objects/4e/bfe1faa920b48af250968a071942538c782db9                                                                   [56]    
+  .git/objects/4f/d78de00758ce05eefc941f7cf754ad6c8d8961                                                                   [208887]
+  .git/objects/50/08ddfcf53c02e82d7eee2e57c38e5672ef89f6                                                                   [255]   
+  .git/objects/53/7a3003feaefe7b1600681eb5bc1c74ee13b562                                                                   [68734] 
+  .git/objects/57/17bee6697e87c8ce37fd0b6941c8d040b0ed7f                                                                   [5588]  
+  .git/objects/5e/377840bca41f1b65b9a7017510a610094c7646                                                                   [4110]  
+  .git/objects/60/0a831530b67c613447082c6186286e92bf8dc0                                                                   [14695] 
+  .git/objects/60/6024d09192f2bef0b0d5ddfb7b23caf1d39cc0                                                                   [53195] 
+  .git/objects/61/4ea23fad2aff585de43b2955b7b4a4bdbbc1f5                                                                   [194]   
+  .git/objects/63/bb53e8eff810ca8df5f2f8ea378418ce73edc9                                                                   [152]   
+  .git/objects/64/655647f6268f70d0a66c89489e03e038eb1c2e                                                                   [3736]  
+  .git/objects/65/72e387989a18dda13dfd49b014c35959e85b95                                                                   [952]   
+  .git/objects/66/cfd13032aa611158d1b650a96b94afbfa89474                                                                   [8485]  
+  .git/objects/68/9d2bc46bbd524c8ffe84ca0946584cac076e7b                                                                   [84]    
+  .git/objects/69/4aef9346c9558b00b13a72bbc6be32f8c162db                                                                   [851]   
+  .git/objects/69/4f5f22539acf496efd505d9f243469b1746022                                                                   [7741]  
+  .git/objects/6a/18e13dfa748692f03f0c2485555973ca88ef70                                                                   [278]   
+  .git/objects/6d/fab00dc3f12f9865c54a963cd14bb7c68ff23b                                                                   [374]   
+  .git/objects/6e/0ed96fdf9fd4a4eeaa13d486e57e303f0d135b                                                                   [25098] 
+  .git/objects/70/d23408702cbca65a242f2ba330acf9ab2d5167                                                                   [850]   
+  .git/objects/71/8fb3cab0d1998ed2a74298672977ca1cce84ff                                                                   [16195] 
+  .git/objects/77/519596a6a56480187ec14ae3be3974fafbe2b0                                                                   [101866]
+  .git/objects/7a/fef3ea477cb97c14544220d1b245138876a924                                                                   [8470]  
+  .git/objects/7d/b10fada2f7495cfaf9dfd205a7355ff1c00b8a                                                                   [36990] 
+  .git/objects/7e/6f5da16d7562abc625736376d6c99bb4cf9eb2                                                                   [121566]
+  .git/objects/7e/d5d6af0e8cec74d1edcbcd17baac3536603d25                                                                   [261]   
+  .git/objects/80/3718b430d10d821aad76b01b45f9575de9a2e4                                                                   [543]   
+  .git/objects/82/04dea3edc623b518fbf5cf352958adbea639d6                                                                   [706803]
+  .git/objects/83/947100b3026062d83537167cd97f3cbe24e8d2                                                                   [95466] 
+  .git/objects/83/9956b50c32c63d2b5ca114bc025f056c7a2f89                                                                   [983]   
+  .git/objects/83/d03136dfd39685f0af490e2c9097a5fbef2a9a                                                                   [384]   
+  .git/objects/84/2f2e64cbb9910c17d48e1d71042c955b5d8000                                                                   [56]    
+  .git/objects/85/788198c4d26631f6b726147baa7e8550b713a0                                                                   [12755] 
+  .git/objects/86/e7930b6244d1237a35dd95473de19b68ad2736                                                                   [34560] 
+  .git/objects/88/5abd90062eaeb06103194926db96dc27e99b04                                                                   [1095]  
+  .git/objects/89/0bce4d5f06d13c16d28bd7f493d65b79ba0923                                                                   [328]   
+  .git/objects/89/c95f45e91e6052d79d3d5b60f3e50cd1cf9cc4                                                                   [305]   
+  .git/objects/8e/ac32de7ec636970bdd4916bc5a2fca0272d87f                                                                   [345]   
+  .git/objects/8f/4eff256eaa513f47d167b032fa55e3a6f3efff                                                                   [11549] 
+  .git/objects/90/be0fff8075d62fc2ca49e64258d22ea73336c0                                                                   [713]   
+  .git/objects/91/2abb35464b929210966434cc1c05e739206ec9                                                                   [962]   
+  .git/objects/93/682cce819f9b0ae322d7edf3f0b89fb3aa5068                                                                   [853]   
+  .git/objects/96/485aaf269cbfb12ab0a2ee15582abfe1ffc7d8                                                                   [278]   
+  .git/objects/96/9d7d84d17110b0d49d8a2edfd672f7924416c4                                                                   [3527]  
+  .git/objects/97/19631cd6ca253394c8123543d8f507e52ea809                                                                   [56]    
+  .git/objects/97/62f75a050fd90f20e45014d4f5574fc76f4b3c                                                                   [304]   
+  .git/objects/98/027fa72aa4db20d55c4fba96895e61de85fe74                                                                   [297]   
+  .git/objects/9b/bd11e741e8646705d9dc2c5ea88b075d66cf11                                                                   [431]   
+  .git/objects/9f/3e49e36e477b2e77fa576cd38bab549fee55c3                                                                   [826]   
+  .git/objects/a0/1cd42961be724d3dfded5c4f06d71e19db3f62                                                                   [358]   
+  .git/objects/a1/a5f22e4e305aa2d278521f7addde5880d0c55a                                                                   [425]   
+  .git/objects/a2/12449fa7e7329100ff4ac95c72d3c9b8225426                                                                   [240]   
+  .git/objects/a2/1ac311dcb78e32c05c82ab12e1195f9e0e69de                                                                   [1218]  
+  .git/objects/a4/2249c909dc4cc8c2114c2fe3f194ef8f8ecd12                                                                   [254]   
+  .git/objects/a4/fad3c441ff31979e21756cfe54bb4105dafdc8                                                                   [239]   
+  .git/objects/a5/570d8cc3a5b7b238ef4079f7092d8f22c50b36                                                                   [422]   
+  .git/objects/a5/8adce9eb1324214d377affe7177e6542007121                                                                   [90]    
+  .git/objects/a6/0afc4623aecc57cc98662c6d3403331e1428cf                                                                   [273]   
+  .git/objects/a6/6272136f1b05a8f7c24c8c1e6a1f9d575bc9ab                                                                   [70112] 
+  .git/objects/a6/719419405a6b4d7075c31e692a6a9afd1a276e                                                                   [15422] 
+  .git/objects/a6/7a71a6013fd9a355c3b27c37ad5f05cb3a83c8                                                                   [5350]  
+  .git/objects/a8/09fee9b0d2d9ec169854eb91fbff12698fe0c5                                                                   [50]    
+  .git/objects/a9/a5aecf429fd8a0d81fbd5fd37006bfa498d5c1                                                                   [19]    
+  .git/objects/ab/4c56b563f3338ab679199fb9fe62de67a2b89c                                                                   [3677]  
+  .git/objects/ab/df120295f41fc1b1019921dc95e021a32d101b                                                                   [549]   
+  .git/objects/ab/fc857228ba69686f5cedf052cd9775ee505136                                                                   [445]   
+  .git/objects/ac/194c2c3420c3d0060cdc133af8a7382b2374e8                                                                   [453]   
+  .git/objects/ac/5ea95a077a915b1d34289d1b4127bbcb1f13f4                                                                   [289]   
+  .git/objects/ac/be0209e7df7f71b7201746a9ac941523995766                                                                   [664]   
+  .git/objects/ad/fecd237e143b92cb9a1fb73a4f68c7e26afdef                                                                   [83]    
+  .git/objects/ae/ce592a06135f679acd13cb53e505b3e162db43                                                                   [658]   
+  .git/objects/af/1cd85518c6d6d4d10d5b11f8a88062e2399bcd                                                                   [713]   
+  .git/objects/af/5c03a73f1432641366bd97e08e4a242224d7d0                                                                   [436]   
+  .git/objects/b0/60f7052d252c55d625d0a8e9a8af2fdee63639                                                                   [625]   
+  .git/objects/b0/c7c2fb822cd116c24c6887eb96ef51c19d45a4                                                                   [978]   
+  .git/objects/b1/7beb480ab18e3e9332d9362adb16c44279ea62                                                                   [736]   
+  .git/objects/b4/61ebda0b6179b67cc78c98d3c7b2e405e8fb77                                                                   [956]   
+  .git/objects/b5/6eb8bae928a62712a949885ef67e1f71d98f8b                                                                   [1669]  
+  .git/objects/b7/70ff706f47bcb620d3d3b345f8b81cfd06a865                                                                   [1231]  
+  .git/objects/b8/4d382b75b827a6360a6ae207581df870e33db6                                                                   [3487]  
+  .git/objects/b8/94e2aa5c0bc70d7b05b48e40cec7197f40b51f                                                                   [211747]
+  .git/objects/bc/a845682887f95ecadc6016abe13cdd6240d41b                                                                   [4551]  
+  .git/objects/bd/81d41843a223fe032706fa58b4a65e48a6fcb9                                                                   [7171]  
+  .git/objects/c2/642d516d669f5ea3cf789078bbdcd8326d84cc                                                                   [1460]  
+  .git/objects/c2/e010925ef336807a4d2a309e67369886e51d7a                                                                   [582]   
+  .git/objects/c3/619e8936a81d6682438d7fb06f464469de2047                                                                   [58]    
+  .git/objects/c3/a376530796fcb7f43b6f3d75e0d48018a6c878                                                                   [440]   
+  .git/objects/c6/9a3a40a5404a6192731150353b133da32310d8                                                                   [58]    
+  .git/objects/c7/10e1998ba198543842324b011431602667c692                                                                   [784]   
+  .git/objects/c7/436764584fb0450369a3814c72c00cd45d62b3                                                                   [345]   
+  .git/objects/c8/024a8ddadf1cc227704dc9ac7ca6194d1ba4e1                                                                   [317809]
+  .git/objects/c8/f2ae076156843e171cb1436279adc5945504dc                                                                   [668]   
+  .git/objects/cb/1c9b1a45d4f1696dc27bb2bcf22d2207ecc87a                                                                   [58]    
+  .git/objects/cb/993a65861e9a51d22eef9bdf8fd9c158dbfe15                                                                   [326]   
+  .git/objects/cb/a976452b25a03b6a1e15fa411407062ec16317                                                                   [911]   
+  .git/objects/ce/2c74ad7bad4a95ff434910ce4d3c471a06fee0                                                                   [2796]  
+  .git/objects/ce/ff36b4a646540cf715145c4fff20cfe83adad2                                                                   [23561] 
+  .git/objects/cf/3801d1bd4d99a80bb68b0ed2bef19adb5014a3                                                                   [1366]  
+  .git/objects/d0/106871e2cef5ab15cf2e761322da27479d0fdb                                                                   [611]   
+  .git/objects/d0/a8e18a851173fd894d6e18e9ab2de8403f7405                                                                   [6199]  
+  .git/objects/d4/9ea4cd5dff5f5b2de45d9566218b66e0956434                                                                   [56]    
+  .git/objects/d5/853c6e6ba72fea1ae251b2b201c5177428ca72                                                                   [3249]  
+  .git/objects/d6/b61c6c1730ad6d5bb73cc67890f652208c95af                                                                   [225]   
+  .git/objects/d6/d5e0b4aa1a543bb685136a8a1fc6f8d29ab045                                                                   [2629]  
+  .git/objects/d8/f8ff6fa3b639cb392111da37413bc590a6aa83                                                                   [3559]  
+  .git/objects/d9/77b2b78c1326fc3dcea1a606677f67071bf8af                                                                   [179]   
+  .git/objects/d9/dec1dd0930eff7ed147b9ce0bd3e718832d6d7                                                                   [417]   
+  .git/objects/da/fdbbc65c12dcc5683a913f92c3fdef17852821                                                                   [38337] 
+  .git/objects/db/8bb22f004c3ed4600ceee88d495db75bf0d071                                                                   [1001]  
+  .git/objects/db/e1b454909a6056c725aee676b021cce340cc07                                                                   [131]   
+  .git/objects/dd/0d739a1791465e2c91400e1132d538dce6c4b6                                                                   [56]    
+  .git/objects/dd/617bf18517ceddf507fd9b567976e54f87293c                                                                   [38983] 
+  .git/objects/dd/ae9dff862532abe97b257de820144b30b7a5e3                                                                   [166]   
+  .git/objects/dd/dbdc4aa8c0c81d1dae3fd058e28307db7c4971                                                                   [274]   
+  .git/objects/de/1e09178053d84e9d5c5c94c83783c621437499                                                                   [97]    
+  .git/objects/e1/01f367fe08a95b381ec69becf67adce634927b                                                                   [338]   
+  .git/objects/e3/2095a913b70ca9521991db87d3ad5623b2744c                                                                   [440]   
+  .git/objects/e3/e6a30216866f2a428518c0d2067c0959bd5f57                                                                   [3823]  
+  .git/objects/e7/4745bbc3b1e598b5325e9295b52c4ccfef10f7                                                                   [1070]  
+  .git/objects/e7/5449c20f3dd42d3935f3dfe6241c17bd8a95f0                                                                   [1917]  
+  .git/objects/e8/5faa9173cf2afa8b5ba3cfcf3e3e14ab749484                                                                   [760]   
+  .git/objects/ed/d951210ac673cb09871eb4860ea17308292301                                                                   [24585] 
+  .git/objects/ee/995d0d1b846811f343403cb08d543ac4fac4de                                                                   [254]   
+  .git/objects/ee/fa3b0af1ad1835b0e9b18743c611aa9c2d0dc2                                                                   [6003]  
+  .git/objects/ee/fb3da139d31223c92ae6f2441a3805f8260722                                                                   [22406] 
+  .git/objects/f1/268baae13bbe0a2f39ff17f6c67b3550fee8a7                                                                   [53074] 
+  .git/objects/f4/54f0a89f1bed9d74e00aab7bc54352b0bc69b9                                                                   [306]   
+  .git/objects/f5/c149798783f5934405a69dc6c21f6c9d496c23                                                                   [389]   
+  .git/objects/f5/dae98adbeb1ce1e00b6b604cbeb1b5285b727c                                                                   [432]   
+  .git/objects/f8/9d389c92424762b4c64f3122f725b69e6eed95                                                                   [642]   
+  .git/objects/f9/e42b8424aa509d1f561854bd1e5c087020ea41                                                                   [187659]
+  .git/objects/fb/50288b35a8c2b8f208ceff098b0b138a88477d                                                                   [12934] 
+  .git/objects/fe/49a670f9e3d94be611fc55e366833760e7c302                                                                   [56]    
+  .git/objects/fe/accd945001f9a98a84f94f76b9bf1430a0b4d4                                                                   [138281]
+  .git/objects/ff/fa481785b25cd8858b393575cd521c46505873                                                                   [271]   
+  .git/refs/heads/master                                                                                                   [41]    
+  .git/refs/remotes/origin/master                                                                                          [41]    
+  .settings/com.appcelerator.titanium.core.prefs                                                                           [1340]  
+  build/.DS_Store                                                                                                          [6148]  
+  build/iphone/Info.plist                                                                                                  [1557]  
+  build/iphone/main.m                                                                                                      [1512]  
+  build/iphone/module.xcconfig                                                                                             [43]    
+  build/iphone/project.xcconfig                                                                                            [292]   
+  build/iphone/ShopBrag_Prefix.pch                                                                                         [340]   
+  build/iphone/build/build.log                                                                                             [40699] 
+  build/iphone/Classes/AccelerometerModule.h                                                                               [459]   
+  build/iphone/Classes/AccelerometerModule.m                                                                               [1265]  
+  build/iphone/Classes/AnalyticsModule.h                                                                                   [543]   
+  build/iphone/Classes/AnalyticsModule.mm                                                                                  [22298] 
+  build/iphone/Classes/APIModule.h                                                                                         [414]   
+  build/iphone/Classes/APIModule.m                                                                                         [3144]  
+  build/iphone/Classes/ApplicationDefaults.h                                                                               [448]   
+  build/iphone/Classes/ApplicationDefaults.m                                                                               [453]   
+  build/iphone/Classes/ApplicationMods.h                                                                                   [219]   
+  build/iphone/Classes/ApplicationMods.m                                                                                   [221]   
+  build/iphone/Classes/ApplicationRouting.h                                                                                [239]   
+  build/iphone/Classes/ApplicationRouting.m                                                                                [282]   
+  build/iphone/Classes/AppModule.h                                                                                         [1600]  
+  build/iphone/Classes/AppModule.m                                                                                         [9610]  
+  build/iphone/Classes/AQRecorder.h                                                                                        [4177]  
+  build/iphone/Classes/AQRecorder.mm                                                                                       [12397] 
+  build/iphone/Classes/AsyncSocket.h                                                                                       [31367] 
+  build/iphone/Classes/AsyncSocket.m                                                                                       [125641]
+  build/iphone/Classes/AsyncUdpSocket.h                                                                                    [14306] 
+  build/iphone/Classes/AsyncUdpSocket.m                                                                                    [66325] 
+  build/iphone/Classes/Base64Transcoder.c                                                                                  [9380]  
+  build/iphone/Classes/Base64Transcoder.h                                                                                  [1726]  
+  build/iphone/Classes/Bridge.h                                                                                            [701]   
+  build/iphone/Classes/Bridge.m                                                                                            [1442]  
+  build/iphone/Classes/CADebugMacros.cpp                                                                                   [3099]  
+  build/iphone/Classes/CADebugMacros.h                                                                                     [19530] 
+  build/iphone/Classes/CAMath.h                                                                                            [3186]  
+  build/iphone/Classes/CAStreamBasicDescription.cpp                                                                        [18953] 
+  build/iphone/Classes/CAStreamBasicDescription.h                                                                          [12015] 
+  build/iphone/Classes/CAXException.cpp                                                                                    [2551]  
+  build/iphone/Classes/CAXException.h                                                                                      [6733]  
+  build/iphone/Classes/CodecModule.h                                                                                       [1449]  
+  build/iphone/Classes/CodecModule.m                                                                                       [12930] 
+  build/iphone/Classes/ContactsModule.h                                                                                    [1559]  
+  build/iphone/Classes/ContactsModule.m                                                                                    [15667] 
+  build/iphone/Classes/DatabaseModule.h                                                                                    [551]   
+  build/iphone/Classes/DatabaseModule.m                                                                                    [1293]  
+  build/iphone/Classes/defines.h                                                                                           [202]   
+  build/iphone/Classes/FacebookModule.h                                                                                    [1095]  
+  build/iphone/Classes/FacebookModule.m                                                                                    [14298] 
+  build/iphone/Classes/FilesystemModule.h                                                                                  [933]   
+  build/iphone/Classes/FilesystemModule.m                                                                                  [4147]  
+  build/iphone/Classes/GDataXMLNode.h                                                                                      [7855]  
+  build/iphone/Classes/GDataXMLNode.m                                                                                      [51010] 
+  build/iphone/Classes/GeolocationModule.h                                                                                 [2749]  
+  build/iphone/Classes/GeolocationModule.mm                                                                                [22234] 
+  build/iphone/Classes/GestureModule.h                                                                                     [877]   
+  build/iphone/Classes/GestureModule.m                                                                                     [3840]  
+  build/iphone/Classes/ImageLoader.h                                                                                       [2183]  
+  build/iphone/Classes/ImageLoader.m                                                                                       [21353] 
+  build/iphone/Classes/KrollBridge.h                                                                                       [2395]  
+  build/iphone/Classes/KrollBridge.mm                                                                                      [25080] 
+  build/iphone/Classes/KrollCallback.h                                                                                     [2741]  
+  build/iphone/Classes/KrollCallback.m                                                                                     [6071]  
+  build/iphone/Classes/KrollContext.h                                                                                      [5267]  
+  build/iphone/Classes/KrollContext.mm                                                                                     [38743] 
+  build/iphone/Classes/KrollCoverage.h                                                                                     [2218]  
+  build/iphone/Classes/KrollCoverage.m                                                                                     [8701]  
+  build/iphone/Classes/KrollMethod.h                                                                                       [1513]  
+  build/iphone/Classes/KrollMethod.m                                                                                       [8311]  
+  build/iphone/Classes/KrollMethodDelegate.h                                                                               [771]   
+  build/iphone/Classes/KrollMethodDelegate.m                                                                               [753]   
+  build/iphone/Classes/KrollObject.h                                                                                       [3269]  
+  build/iphone/Classes/KrollObject.m                                                                                       [45052] 
+  build/iphone/Classes/KrollPropertyDelegate.h                                                                             [733]   
+  build/iphone/Classes/KrollPropertyDelegate.m                                                                             [692]   
+  build/iphone/Classes/KrollTimer.h                                                                                        [947]   
+  build/iphone/Classes/KrollTimer.m                                                                                        [3500]  
+  build/iphone/Classes/LauncherButton.h                                                                                    [1560]  
+  build/iphone/Classes/LauncherButton.m                                                                                    [6001]  
+  build/iphone/Classes/LauncherItem.h                                                                                      [1826]  
+  build/iphone/Classes/LauncherItem.m                                                                                      [2248]  
+  build/iphone/Classes/LauncherView.h                                                                                      [3033]  
+  build/iphone/Classes/LauncherView.m                                                                                      [23893] 
+  build/iphone/Classes/LayoutConstraint.h                                                                                  [2635]  
+  build/iphone/Classes/LayoutConstraint.m                                                                                  [7896]  
+  build/iphone/Classes/ListenerEntry.h                                                                                     [702]   
+  build/iphone/Classes/ListenerEntry.m                                                                                     [958]   
+  build/iphone/Classes/LocaleModule.h                                                                                      [401]   
+  build/iphone/Classes/LocaleModule.m                                                                                      [2158]  
+  build/iphone/Classes/MapModule.h                                                                                         [754]   
+  build/iphone/Classes/MapModule.m                                                                                         [766]   
+  build/iphone/Classes/MediaModule.h                                                                                       [9617]  
+  build/iphone/Classes/MediaModule.m                                                                                       [56129] 
+  build/iphone/Classes/Mimetypes.h                                                                                         [516]   
+  build/iphone/Classes/Mimetypes.m                                                                                         [2240]  
+  build/iphone/Classes/NetworkModule.h                                                                                     [2246]  
+  build/iphone/Classes/NetworkModule.m                                                                                     [10143] 
+  build/iphone/Classes/NSData+Additions.h                                                                                  [647]   
+  build/iphone/Classes/NSData+Additions.mm                                                                                 [7393]  
+  build/iphone/Classes/OperationQueue.h                                                                                    [933]   
+  build/iphone/Classes/OperationQueue.m                                                                                    [2790]  
+  build/iphone/Classes/PlatformModule.h                                                                                    [1833]  
+  build/iphone/Classes/PlatformModule.m                                                                                    [9811]  
+  build/iphone/Classes/SBJSON.h                                                                                            [5440]  
+  build/iphone/Classes/SBJSON.m                                                                                            [30032] 
+  build/iphone/Classes/SCListener.h                                                                                        [653]   
+  build/iphone/Classes/SCListener.m                                                                                        [3969]  
+  build/iphone/Classes/StreamModule.h                                                                                      [1045]  
+  build/iphone/Classes/StreamModule.m                                                                                      [10518] 
+  build/iphone/Classes/Ti2DMatrix.h                                                                                        [1017]  
+  build/iphone/Classes/Ti2DMatrix.m                                                                                        [2874]  
+  build/iphone/Classes/TiAction.h                                                                                          [773]   
+  build/iphone/Classes/TiAction.m                                                                                          [763]   
+  build/iphone/Classes/TiAnimation.h                                                                                       [3682]  
+  build/iphone/Classes/TiAnimation.m                                                                                       [17691] 
+  build/iphone/Classes/TiApp.h                                                                                             [2642]  
+  build/iphone/Classes/TiApp.mm                                                                                            [20542] 
+  build/iphone/Classes/TiAppiOSBackgroundServiceProxy.h                                                                    [542]   
+  build/iphone/Classes/TiAppiOSBackgroundServiceProxy.m                                                                    [1363]  
+  build/iphone/Classes/TiAppiOSLocalNotificationProxy.h                                                                    [571]   
+  build/iphone/Classes/TiAppiOSLocalNotificationProxy.m                                                                    [758]   
+  build/iphone/Classes/TiAppiOSProxy.h                                                                                     [514]   
+  build/iphone/Classes/TiAppiOSProxy.m                                                                                     [5980]  
+  build/iphone/Classes/TiAppPropertiesProxy.h                                                                              [830]   
+  build/iphone/Classes/TiAppPropertiesProxy.m                                                                              [3045]  
+  build/iphone/Classes/TiBase.h                                                                                            [14451] 
+  build/iphone/Classes/TiBase.m                                                                                            [4183]  
+  build/iphone/Classes/TiBlob.h                                                                                            [1546]  
+  build/iphone/Classes/TiBlob.m                                                                                            [8107]  
+  build/iphone/Classes/TiBuffer.h                                                                                          [1101]  
+  build/iphone/Classes/TiBuffer.m                                                                                          [13798] 
+  build/iphone/Classes/TiButtonUtil.h                                                                                      [449]   
+  build/iphone/Classes/TiButtonUtil.m                                                                                      [1336]  
+  build/iphone/Classes/TiColor.h                                                                                           [827]   
+  build/iphone/Classes/TiColor.m                                                                                           [1518]  
+  build/iphone/Classes/TiComplexValue.h                                                                                    [883]   
+  build/iphone/Classes/TiComplexValue.m                                                                                    [715]   
+  build/iphone/Classes/TiContactsGroup.h                                                                                   [967]   
+  build/iphone/Classes/TiContactsGroup.m                                                                                   [5378]  
+  build/iphone/Classes/TiContactsPerson.h                                                                                  [1106]  
+  build/iphone/Classes/TiContactsPerson.m                                                                                  [12802] 
+  build/iphone/Classes/TiController.h                                                                                      [498]   
+  build/iphone/Classes/TiDatabaseProxy.h                                                                                   [889]   
+  build/iphone/Classes/TiDatabaseProxy.m                                                                                   [7682]  
+  build/iphone/Classes/TiDatabaseResultSetProxy.h                                                                          [809]   
+  build/iphone/Classes/TiDatabaseResultSetProxy.m                                                                          [6038]  
+  build/iphone/Classes/TiDataStream.h                                                                                      [673]   
+  build/iphone/Classes/TiDataStream.m                                                                                      [9566]  
+  build/iphone/Classes/TiDebugger.h                                                                                        [987]   
+  build/iphone/Classes/TiDimension.h                                                                                       [4536]  
+  build/iphone/Classes/TiDimension.m                                                                                       [1035]  
+  build/iphone/Classes/TiDOMAttrProxy.h                                                                                    [889]   
+  build/iphone/Classes/TiDOMAttrProxy.m                                                                                    [2215]  
+  build/iphone/Classes/TiDOMCDATANodeProxy.h                                                                               [472]   
+  build/iphone/Classes/TiDOMCDATANodeProxy.m                                                                               [456]   
+  build/iphone/Classes/TIDOMCharacterDataProxy.h                                                                           [751]   
+  build/iphone/Classes/TIDOMCharacterDataProxy.m                                                                           [3414]  
+  build/iphone/Classes/TiDOMCommentProxy.h                                                                                 [480]   
+  build/iphone/Classes/TiDOMCommentProxy.m                                                                                 [452]   
+  build/iphone/Classes/TiDOMDocFragProxy.h                                                                                 [519]   
+  build/iphone/Classes/TiDOMDocFragProxy.m                                                                                 [596]   
+  build/iphone/Classes/TiDOMDocumentProxy.h                                                                                [558]   
+  build/iphone/Classes/TiDOMDocumentProxy.m                                                                                [14821] 
+  build/iphone/Classes/TIDOMDocumentTypeProxy.h                                                                            [752]   
+  build/iphone/Classes/TIDOMDocumentTypeProxy.m                                                                            [1665]  
+  build/iphone/Classes/TIDOMDOMImplementationProxy.h                                                                       [473]   
+  build/iphone/Classes/TIDOMDOMImplementationProxy.m                                                                       [4406]  
+  build/iphone/Classes/TiDOMElementProxy.h                                                                                 [804]   
+  build/iphone/Classes/TiDOMElementProxy.m                                                                                 [21162] 
+  build/iphone/Classes/TiDOMEntityProxy.h                                                                                  [600]   
+  build/iphone/Classes/TiDOMEntityProxy.m                                                                                  [703]   
+  build/iphone/Classes/TiDOMEntityRefProxy.h                                                                               [463]   
+  build/iphone/Classes/TiDOMEntityRefProxy.m                                                                               [542]   
+  build/iphone/Classes/TiDOMNamedNodeMapProxy.h                                                                            [889]   
+  build/iphone/Classes/TiDOMNamedNodeMapProxy.m                                                                            [3395]  
+  build/iphone/Classes/TiDOMNodeListProxy.h                                                                                [629]   
+  build/iphone/Classes/TiDOMNodeListProxy.m                                                                                [1237]  
+  build/iphone/Classes/TiDOMNodeProxy.h                                                                                    [2658]  
+  build/iphone/Classes/TiDOMNodeProxy.m                                                                                    [16962] 
+  build/iphone/Classes/TiDOMNotationProxy.h                                                                                [556]   
+  build/iphone/Classes/TiDOMNotationProxy.m                                                                                [650]   
+  build/iphone/Classes/TiDOMPIProxy.h                                                                                      [629]   
+  build/iphone/Classes/TiDOMPIProxy.m                                                                                      [701]   
+  build/iphone/Classes/TiDOMTextNodeProxy.h                                                                                [559]   
+  build/iphone/Classes/TiDOMTextNodeProxy.m                                                                                [2400]  
+  build/iphone/Classes/TiDOMValidator.h                                                                                    [634]   
+  build/iphone/Classes/TiDOMValidator.m                                                                                    [1323]  
+  build/iphone/Classes/TiErrorController.h                                                                                 [441]   
+  build/iphone/Classes/TiErrorController.m                                                                                 [3331]  
+  build/iphone/Classes/TiEvaluator.h                                                                                       [1322]  
+  build/iphone/Classes/TiFacebookDialogRequest.h                                                                           [643]   
+  build/iphone/Classes/TiFacebookDialogRequest.m                                                                           [3311]  
+  build/iphone/Classes/TiFacebookLoginButton.h                                                                             [538]   
+  build/iphone/Classes/TiFacebookLoginButton.m                                                                             [3711]  
+  build/iphone/Classes/TiFacebookLoginButtonProxy.h                                                                        [751]   
+  build/iphone/Classes/TiFacebookLoginButtonProxy.m                                                                        [1146]  
+  build/iphone/Classes/TiFacebookRequest.h                                                                                 [708]   
+  build/iphone/Classes/TiFacebookRequest.m                                                                                 [2518]  
+  build/iphone/Classes/TiFile.h                                                                                            [966]   
+  build/iphone/Classes/TiFile.m                                                                                            [2515]  
+  build/iphone/Classes/TiFilesystemBlobProxy.h                                                                             [527]   
+  build/iphone/Classes/TiFilesystemBlobProxy.m                                                                             [2514]  
+  build/iphone/Classes/TiFilesystemFileProxy.h                                                                             [1036]  
+  build/iphone/Classes/TiFilesystemFileProxy.m                                                                             [12588] 
+  build/iphone/Classes/TiFilesystemFileStreamProxy.h                                                                       [549]   
+  build/iphone/Classes/TiFilesystemFileStreamProxy.m                                                                       [11465] 
+  build/iphone/Classes/TiGradient.h                                                                                        [1617]  
+  build/iphone/Classes/TiGradient.m                                                                                        [6385]  
+  build/iphone/Classes/TiHost.h                                                                                            [1364]  
+  build/iphone/Classes/TiHost.m                                                                                            [4046]  
+  build/iphone/Classes/TiLayoutQueue.h                                                                                     [519]   
+  build/iphone/Classes/TiLayoutQueue.m                                                                                     [2763]  
+  build/iphone/Classes/TiLocale.h                                                                                          [679]   
+  build/iphone/Classes/TiLocale.m                                                                                          [1523]  
+  build/iphone/Classes/TiMapAnnotationProxy.h                                                                              [1153]  
+  build/iphone/Classes/TiMapAnnotationProxy.m                                                                              [6082]  
+  build/iphone/Classes/TiMapImageAnnotationView.h                                                                          [697]   
+  build/iphone/Classes/TiMapImageAnnotationView.m                                                                          [2136]  
+  build/iphone/Classes/TiMapPinAnnotationView.h                                                                            [682]   
+  build/iphone/Classes/TiMapPinAnnotationView.m                                                                            [1979]  
+  build/iphone/Classes/TiMapView.h                                                                                         [1750]  
+  build/iphone/Classes/TiMapView.m                                                                                         [21449] 
+  build/iphone/Classes/TiMapViewProxy.h                                                                                    [1270]  
+  build/iphone/Classes/TiMapViewProxy.m                                                                                    [5635]  
+  build/iphone/Classes/TiMediaAudioPlayerProxy.h                                                                           [1654]  
+  build/iphone/Classes/TiMediaAudioPlayerProxy.m                                                                           [8237]  
+  build/iphone/Classes/TiMediaAudioRecorderProxy.h                                                                         [929]   
+  build/iphone/Classes/TiMediaAudioRecorderProxy.mm                                                                        [5470]  
+  build/iphone/Classes/TiMediaAudioSession.h                                                                               [1477]  
+  build/iphone/Classes/TiMediaAudioSession.m                                                                               [9610]  
+  build/iphone/Classes/TiMediaItem.h                                                                                       [1908]  
+  build/iphone/Classes/TiMediaItem.m                                                                                       [1472]  
+  build/iphone/Classes/TiMediaMusicPlayer.h                                                                                [1257]  
+  build/iphone/Classes/TiMediaMusicPlayer.m                                                                                [6142]  
+  build/iphone/Classes/TiMediaSoundProxy.h                                                                                 [1012]  
+  build/iphone/Classes/TiMediaSoundProxy.m                                                                                 [9333]  
+  build/iphone/Classes/TiMediaVideoPlayer.h                                                                                [736]   
+  build/iphone/Classes/TiMediaVideoPlayer.m                                                                                [3187]  
+  build/iphone/Classes/TiMediaVideoPlayerProxy.h                                                                           [2017]  
+  build/iphone/Classes/TiMediaVideoPlayerProxy.m                                                                           [24994] 
+  build/iphone/Classes/TiModule.h                                                                                          [1118]  
+  build/iphone/Classes/TiModule.m                                                                                          [6091]  
+  build/iphone/Classes/TiNetworkBonjourBrowserProxy.h                                                                      [973]   
+  build/iphone/Classes/TiNetworkBonjourBrowserProxy.m                                                                      [4984]  
+  build/iphone/Classes/TiNetworkBonjourServiceProxy.h                                                                      [1522]  
+  build/iphone/Classes/TiNetworkBonjourServiceProxy.m                                                                      [11999] 
+  build/iphone/Classes/TiNetworkHTTPClientProxy.h                                                                          [2620]  
+  build/iphone/Classes/TiNetworkHTTPClientProxy.m                                                                          [20667] 
+  build/iphone/Classes/TiNetworkHTTPClientResultProxy.h                                                                    [609]   
+  build/iphone/Classes/TiNetworkHTTPClientResultProxy.m                                                                    [4877]  
+  build/iphone/Classes/TiNetworkSocketProxy.h                                                                              [950]   
+  build/iphone/Classes/TiNetworkSocketProxy.m                                                                              [835]   
+  build/iphone/Classes/TiNetworkSocketTCPProxy.h                                                                           [2760]  
+  build/iphone/Classes/TiNetworkSocketTCPProxy.m                                                                           [31811] 
+  build/iphone/Classes/TiNetworkTCPSocketProxy.h                                                                           [1185]  
+  build/iphone/Classes/TiNetworkTCPSocketProxy.mm                                                                          [23936] 
+  build/iphone/Classes/TiPlatformDisplayCaps.h                                                                             [636]   
+  build/iphone/Classes/TiPlatformDisplayCaps.m                                                                             [1867]  
+  build/iphone/Classes/TiPoint.h                                                                                           [808]   
+  build/iphone/Classes/TiPoint.m                                                                                           [1459]  
+  build/iphone/Classes/TiProxy.h                                                                                           [5427]  
+  build/iphone/Classes/TiProxy.m                                                                                           [29649] 
+  build/iphone/Classes/TiPublicAPI.h                                                                                       [2748]  
+  build/iphone/Classes/TiPublicAPI.m                                                                                       [350]   
+  build/iphone/Classes/TiRange.h                                                                                           [518]   
+  build/iphone/Classes/TiRange.m                                                                                           [806]   
+  build/iphone/Classes/TiRect.h                                                                                            [616]   
+  build/iphone/Classes/TiRect.m                                                                                            [1084]  
+  build/iphone/Classes/TiRootController.h                                                                                  [1295]  
+  build/iphone/Classes/TiRootViewController.h                                                                              [3270]  
+  build/iphone/Classes/TiRootViewController.m                                                                              [37249] 
+  build/iphone/Classes/TiStreamProxy.h                                                                                     [1903]  
+  build/iphone/Classes/TiStreamProxy.m                                                                                     [5290]  
+  build/iphone/Classes/TiStylesheet.h                                                                                      [800]   
+  build/iphone/Classes/TiStylesheet.m                                                                                      [3996]  
+  build/iphone/Classes/TiTab.h                                                                                             [620]   
+  build/iphone/Classes/TiTabController.h                                                                                   [370]   
+  build/iphone/Classes/TiTabGroup.h                                                                                        [398]   
+  build/iphone/Classes/TiThreading.h                                                                                       [2648]  
+  build/iphone/Classes/TiThreading.m                                                                                       [352]   
+  build/iphone/Classes/TiToolbar.h                                                                                         [461]   
+  build/iphone/Classes/TiToolbar.m                                                                                         [462]   
+  build/iphone/Classes/TiToolbarButton.h                                                                                   [468]   
+  build/iphone/Classes/TiUIActivityIndicator.h                                                                             [701]   
+  build/iphone/Classes/TiUIActivityIndicator.m                                                                             [4592]  
+  build/iphone/Classes/TiUIActivityIndicatorProxy.h                                                                        [475]   
+  build/iphone/Classes/TiUIActivityIndicatorProxy.m                                                                        [674]   
+  build/iphone/Classes/TiUIAlertDialogProxy.h                                                                              [470]   
+  build/iphone/Classes/TiUIAlertDialogProxy.m                                                                              [4035]  
+  build/iphone/Classes/TiUIButton.h                                                                                        [749]   
+  build/iphone/Classes/TiUIButton.m                                                                                        [10670] 
+  build/iphone/Classes/TiUIButtonBar.h                                                                                     [599]   
+  build/iphone/Classes/TiUIButtonBar.m                                                                                     [6129]  
+  build/iphone/Classes/TiUIButtonBarProxy.h                                                                                [402]   
+  build/iphone/Classes/TiUIButtonBarProxy.m                                                                                [797]   
+  build/iphone/Classes/TiUIButtonProxy.h                                                                                   [609]   
+  build/iphone/Classes/TiUIButtonProxy.m                                                                                   [3197]  
+  build/iphone/Classes/TiUICanvasView.h                                                                                    [527]   
+  build/iphone/Classes/TiUICanvasView.m                                                                                    [10122] 
+  build/iphone/Classes/TiUICanvasViewProxy.h                                                                               [435]   
+  build/iphone/Classes/TiUICanvasViewProxy.m                                                                               [659]   
+  build/iphone/Classes/TiUIClipboardProxy.h                                                                                [710]   
+  build/iphone/Classes/TiUIClipboardProxy.m                                                                                [6199]  
+  build/iphone/Classes/TiUIDashboardItem.h                                                                                 [444]   
+  build/iphone/Classes/TiUIDashboardItem.m                                                                                 [866]   
+  build/iphone/Classes/TiUIDashboardItemProxy.h                                                                            [558]   
+  build/iphone/Classes/TiUIDashboardItemProxy.m                                                                            [2165]  
+  build/iphone/Classes/TiUIDashboardView.h                                                                                 [578]   
+  build/iphone/Classes/TiUIDashboardView.m                                                                                 [5562]  
+  build/iphone/Classes/TiUIDashboardViewProxy.h                                                                            [444]   
+  build/iphone/Classes/TiUIDashboardViewProxy.m                                                                            [1739]  
+  build/iphone/Classes/TiUIEmailDialogProxy.h                                                                              [836]   
+  build/iphone/Classes/TiUIEmailDialogProxy.m                                                                              [4483]  
+  build/iphone/Classes/TiUIImageView.h                                                                                     [1183]  
+  build/iphone/Classes/TiUIImageView.m                                                                                     [20607] 
+  build/iphone/Classes/TiUIImageViewProxy.h                                                                                [650]   
+  build/iphone/Classes/TiUIImageViewProxy.m                                                                                [5071]  
+  build/iphone/Classes/TiUIiOS3DMatrix.h                                                                                   [1686]  
+  build/iphone/Classes/TiUIiOS3DMatrix.m                                                                                   [3239]  
+  build/iphone/Classes/TiUIiOSAdView.h                                                                                     [548]   
+  build/iphone/Classes/TiUIiOSAdView.m                                                                                     [3665]  
+  build/iphone/Classes/TiUIiOSAdViewProxy.h                                                                                [622]   
+  build/iphone/Classes/TiUIiOSAdViewProxy.m                                                                                [1802]  
+  build/iphone/Classes/TiUIiOSCoverFlowView.h                                                                              [804]   
+  build/iphone/Classes/TiUIiOSCoverFlowView.m                                                                              [7913]  
+  build/iphone/Classes/TiUIiOSCoverFlowViewProxy.h                                                                         [494]   
+  build/iphone/Classes/TiUIiOSCoverFlowViewProxy.m                                                                         [1036]  
+  build/iphone/Classes/TiUIiOSProxy.h                                                                                      [935]   
+  build/iphone/Classes/TiUIiOSProxy.m                                                                                      [4417]  
+  build/iphone/Classes/TiUIiOSTabbedBarProxy.h                                                                             [476]   
+  build/iphone/Classes/TiUIiOSTabbedBarProxy.m                                                                             [875]   
+  build/iphone/Classes/TiUIiOSToolbar.h                                                                                    [572]   
+  build/iphone/Classes/TiUIiOSToolbar.m                                                                                    [4554]  
+  build/iphone/Classes/TiUIiOSToolbarProxy.h                                                                               [469]   
+  build/iphone/Classes/TiUIiOSToolbarProxy.m                                                                               [2009]  
+  build/iphone/Classes/TiUIiPadDocumentViewerProxy.h                                                                       [670]   
+  build/iphone/Classes/TiUIiPadDocumentViewerProxy.m                                                                       [3910]  
+  build/iphone/Classes/TiUIiPadPopover.h                                                                                   [532]   
+  build/iphone/Classes/TiUIiPadPopover.m                                                                                   [481]   
+  build/iphone/Classes/TiUIiPadPopoverProxy.h                                                                              [1576]  
+  build/iphone/Classes/TiUIiPadPopoverProxy.m                                                                              [10910] 
+  build/iphone/Classes/TiUIiPadProxy.h                                                                                     [1472]  
+  build/iphone/Classes/TiUIiPadProxy.m                                                                                     [1911]  
+  build/iphone/Classes/TiUIiPadSplitWindow.h                                                                               [889]   
+  build/iphone/Classes/TiUIiPadSplitWindow.m                                                                               [5833]  
+  build/iphone/Classes/TiUIiPadSplitWindowButtonProxy.h                                                                    [598]   
+  build/iphone/Classes/TiUIiPadSplitWindowButtonProxy.m                                                                    [974]   
+  build/iphone/Classes/TiUIiPadSplitWindowProxy.h                                                                          [533]   
+  build/iphone/Classes/TiUIiPadSplitWindowProxy.m                                                                          [2589]  
+  build/iphone/Classes/TiUIiPhoneActivityIndicatorStyleProxy.h                                                             [606]   
+  build/iphone/Classes/TiUIiPhoneActivityIndicatorStyleProxy.m                                                             [667]   
+  build/iphone/Classes/TiUIiPhoneAnimationStyleProxy.h                                                                     [713]   
+  build/iphone/Classes/TiUIiPhoneAnimationStyleProxy.m                                                                     [817]   
+  build/iphone/Classes/TiUIiPhoneNavigationGroup.h                                                                         [838]   
+  build/iphone/Classes/TiUIiPhoneNavigationGroup.m                                                                         [4954]  
+  build/iphone/Classes/TiUIiPhoneNavigationGroupProxy.h                                                                    [830]   
+  build/iphone/Classes/TiUIiPhoneNavigationGroupProxy.m                                                                    [4295]  
+  build/iphone/Classes/TiUIiPhoneProgressBarStyleProxy.h                                                                   [597]   
+  build/iphone/Classes/TiUIiPhoneProgressBarStyleProxy.m                                                                   [623]   
+  build/iphone/Classes/TiUIiPhoneProxy.h                                                                                   [3815]  
+  build/iphone/Classes/TiUIiPhoneProxy.m                                                                                   [10690] 
+  build/iphone/Classes/TiUIiPhoneRowAnimationStyleProxy.h                                                                  [881]   
+  build/iphone/Classes/TiUIiPhoneRowAnimationStyleProxy.m                                                                  [919]   
+  build/iphone/Classes/TiUIiPhoneScrollIndicatorStyleProxy.h                                                               [617]   
+  build/iphone/Classes/TiUIiPhoneScrollIndicatorStyleProxy.m                                                               [678]   
+  build/iphone/Classes/TiUIiPhoneStatusBarProxy.h                                                                          [885]   
+  build/iphone/Classes/TiUIiPhoneStatusBarProxy.m                                                                          [927]   
+  build/iphone/Classes/TiUIiPhoneSystemButtonProxy.h                                                                       [1794]  
+  build/iphone/Classes/TiUIiPhoneSystemButtonProxy.m                                                                       [1963]  
+  build/iphone/Classes/TiUIiPhoneSystemButtonStyleProxy.h                                                                  [667]   
+  build/iphone/Classes/TiUIiPhoneSystemButtonStyleProxy.m                                                                  [682]   
+  build/iphone/Classes/TiUIiPhoneSystemIconProxy.h                                                                         [1046]  
+  build/iphone/Classes/TiUIiPhoneSystemIconProxy.m                                                                         [1115]  
+  build/iphone/Classes/TiUIiPhoneTableViewCellSelectionStyleProxy.h                                                        [626]   
+  build/iphone/Classes/TiUIiPhoneTableViewCellSelectionStyleProxy.m                                                        [698]   
+  build/iphone/Classes/TiUIiPhoneTableViewScrollPositionProxy.h                                                            [667]   
+  build/iphone/Classes/TiUIiPhoneTableViewScrollPositionProxy.m                                                            [715]   
+  build/iphone/Classes/TiUIiPhoneTableViewSeparatorStyleProxy.h                                                            [569]   
+  build/iphone/Classes/TiUIiPhoneTableViewSeparatorStyleProxy.m                                                            [621]   
+  build/iphone/Classes/TiUIiPhoneTableViewStyleProxy.h                                                                     [547]   
+  build/iphone/Classes/TiUIiPhoneTableViewStyleProxy.m                                                                     [562]   
+  build/iphone/Classes/TiUILabel.h                                                                                         [672]   
+  build/iphone/Classes/TiUILabel.m                                                                                         [6913]  
+  build/iphone/Classes/TiUILabelProxy.h                                                                                    [429]   
+  build/iphone/Classes/TiUILabelProxy.m                                                                                    [1510]  
+  build/iphone/Classes/TiUIMaskedImage.h                                                                                   [546]   
+  build/iphone/Classes/TiUIMaskedImage.m                                                                                   [2762]  
+  build/iphone/Classes/TiUIMaskedImageProxy.h                                                                              [451]   
+  build/iphone/Classes/TiUIMaskedImageProxy.m                                                                              [668]   
+  build/iphone/Classes/TiUINavBarButton.h                                                                                  [616]   
+  build/iphone/Classes/TiUINavBarButton.m                                                                                  [6026]  
+  build/iphone/Classes/TiUIOptionDialogProxy.h                                                                             [800]   
+  build/iphone/Classes/TiUIOptionDialogProxy.m                                                                             [4559]  
+  build/iphone/Classes/TiUIPicker.h                                                                                        [910]   
+  build/iphone/Classes/TiUIPicker.m                                                                                        [11286] 
+  build/iphone/Classes/TiUIPickerColumnProxy.h                                                                             [719]   
+  build/iphone/Classes/TiUIPickerColumnProxy.m                                                                             [1174]  
+  build/iphone/Classes/TiUIPickerProxy.h                                                                                   [529]   
+  build/iphone/Classes/TiUIPickerProxy.m                                                                                   [8674]  
+  build/iphone/Classes/TiUIPickerRowProxy.h                                                                                [434]   
+  build/iphone/Classes/TiUIPickerRowProxy.m                                                                                [429]   
+  build/iphone/Classes/TiUIProgressBar.h                                                                                   [634]   
+  build/iphone/Classes/TiUIProgressBar.m                                                                                   [3649]  
+  build/iphone/Classes/TiUIProgressBarProxy.h                                                                              [440]   
+  build/iphone/Classes/TiUIProgressBarProxy.m                                                                              [763]   
+  build/iphone/Classes/TiUIScrollableView.h                                                                                [1114]  
+  build/iphone/Classes/TiUIScrollableView.m                                                                                [13796] 
+  build/iphone/Classes/TiUIScrollableViewProxy.h                                                                           [684]   
+  build/iphone/Classes/TiUIScrollableViewProxy.m                                                                           [5503]  
+  build/iphone/Classes/TiUIScrollView.h                                                                                    [978]   
+  build/iphone/Classes/TiUIScrollView.m                                                                                    [7680]  
+  build/iphone/Classes/TiUIScrollViewProxy.h                                                                               [461]   
+  build/iphone/Classes/TiUIScrollViewProxy.m                                                                               [3871]  
+  build/iphone/Classes/TiUISearchBar.h                                                                                     [721]   
+  build/iphone/Classes/TiUISearchBar.m                                                                                     [6166]  
+  build/iphone/Classes/TiUISearchBarProxy.h                                                                                [612]   
+  build/iphone/Classes/TiUISearchBarProxy.m                                                                                [1254]  
+  build/iphone/Classes/TiUISlider.h                                                                                        [675]   
+  build/iphone/Classes/TiUISlider.m                                                                                        [8176]  
+  build/iphone/Classes/TiUISliderProxy.h                                                                                   [431]   
+  build/iphone/Classes/TiUISliderProxy.m                                                                                   [803]   
+  build/iphone/Classes/TiUISwitch.h                                                                                        [478]   
+  build/iphone/Classes/TiUISwitch.m                                                                                        [3101]  
+  build/iphone/Classes/TiUISwitchProxy.h                                                                                   [399]   
+  build/iphone/Classes/TiUISwitchProxy.m                                                                                   [656]   
+  build/iphone/Classes/TiUITabController.h                                                                                 [743]   
+  build/iphone/Classes/TiUITabController.m                                                                                 [1155]  
+  build/iphone/Classes/TiUITabGroup.h                                                                                      [975]   
+  build/iphone/Classes/TiUITabGroup.m                                                                                      [12009] 
+  build/iphone/Classes/TiUITabGroupProxy.h                                                                                 [592]   
+  build/iphone/Classes/TiUITabGroupProxy.m                                                                                 [5684]  
+  build/iphone/Classes/TiUITableView.h                                                                                     [2949]  
+  build/iphone/Classes/TiUITableView.m                                                                                     [66536] 
+  build/iphone/Classes/TiUITableViewAction.h                                                                               [1316]  
+  build/iphone/Classes/TiUITableViewAction.m                                                                               [1276]  
+  build/iphone/Classes/TiUITableViewProxy.h                                                                                [1058]  
+  build/iphone/Classes/TiUITableViewProxy.m                                                                                [21242] 
+  build/iphone/Classes/TiUITableViewRowProxy.h                                                                             [1884]  
+  build/iphone/Classes/TiUITableViewRowProxy.m                                                                             [24110] 
+  build/iphone/Classes/TiUITableViewSectionProxy.h                                                                         [1124]  
+  build/iphone/Classes/TiUITableViewSectionProxy.m                                                                         [3201]  
+  build/iphone/Classes/TiUITabProxy.h                                                                                      [1808]  
+  build/iphone/Classes/TiUITabProxy.m                                                                                      [15530] 
+  build/iphone/Classes/TiUITextArea.h                                                                                      [485]   
+  build/iphone/Classes/TiUITextArea.m                                                                                      [3688]  
+  build/iphone/Classes/TiUITextAreaProxy.h                                                                                 [452]   
+  build/iphone/Classes/TiUITextAreaProxy.m                                                                                 [452]   
+  build/iphone/Classes/TiUITextField.h                                                                                     [1221]  
+  build/iphone/Classes/TiUITextField.m                                                                                     [11857] 
+  build/iphone/Classes/TiUITextFieldProxy.h                                                                                [455]   
+  build/iphone/Classes/TiUITextFieldProxy.m                                                                                [1697]  
+  build/iphone/Classes/TiUITextWidget.h                                                                                    [995]   
+  build/iphone/Classes/TiUITextWidget.m                                                                                    [4571]  
+  build/iphone/Classes/TiUITextWidgetProxy.h                                                                               [1032]  
+  build/iphone/Classes/TiUITextWidgetProxy.m                                                                               [5186]  
+  build/iphone/Classes/TiUIView.h                                                                                          [4496]  
+  build/iphone/Classes/TiUIView.m                                                                                          [36783] 
+  build/iphone/Classes/TiUIViewProxy.h                                                                                     [399]   
+  build/iphone/Classes/TiUIViewProxy.m                                                                                     [388]   
+  build/iphone/Classes/TiUIWebView.h                                                                                       [1250]  
+  build/iphone/Classes/TiUIWebView.m                                                                                       [24263] 
+  build/iphone/Classes/TiUIWebViewProxy.h                                                                                  [543]   
+  build/iphone/Classes/TiUIWebViewProxy.m                                                                                  [5832]  
+  build/iphone/Classes/TiUIWindow.h                                                                                        [419]   
+  build/iphone/Classes/TiUIWindow.m                                                                                        [801]   
+  build/iphone/Classes/TiUIWindowProxy.h                                                                                   [807]   
+  build/iphone/Classes/TiUIWindowProxy.m                                                                                   [23258] 
+  build/iphone/Classes/TiUtils.h                                                                                           [6886]  
+  build/iphone/Classes/TiUtils.m                                                                                           [46611] 
+  build/iphone/Classes/TiViewController.h                                                                                  [1404]  
+  build/iphone/Classes/TiViewController.m                                                                                  [3710]  
+  build/iphone/Classes/TiViewProxy.h                                                                                       [7767]  
+  build/iphone/Classes/TiViewProxy.m                                                                                       [47868] 
+  build/iphone/Classes/TiWindowProxy.h                                                                                     [3577]  
+  build/iphone/Classes/TiWindowProxy.m                                                                                     [21283] 
+  build/iphone/Classes/TopTiModule.h                                                                                       [391]   
+  build/iphone/Classes/TopTiModule.m                                                                                       [6350]  
+  build/iphone/Classes/UIImage+Alpha.h                                                                                     [586]   
+  build/iphone/Classes/UIImage+Alpha.m                                                                                     [5886]  
+  build/iphone/Classes/UIImage+Resize.h                                                                                    [1068]  
+  build/iphone/Classes/UIImage+Resize.m                                                                                    [8755]  
+  build/iphone/Classes/UIImage+RoundedCorner.h                                                                             [493]   
+  build/iphone/Classes/UIImage+RoundedCorner.m                                                                             [3367]  
+  build/iphone/Classes/UIModule.h                                                                                          [6925]  
+  build/iphone/Classes/UIModule.m                                                                                          [16049] 
+  build/iphone/Classes/UtilsModule.h                                                                                       [429]   
+  build/iphone/Classes/UtilsModule.m                                                                                       [3445]  
+  build/iphone/Classes/Webcolor.h                                                                                          [808]   
+  build/iphone/Classes/Webcolor.m                                                                                          [6549]  
+  build/iphone/Classes/WebFont.h                                                                                           [1118]  
+  build/iphone/Classes/WebFont.m                                                                                           [11126] 
+  build/iphone/Classes/XHRBridge.h                                                                                         [559]   
+  build/iphone/Classes/XHRBridge.m                                                                                         [5866]  
+  build/iphone/Classes/XMLModule.h                                                                                         [415]   
+  build/iphone/Classes/XMLModule.m                                                                                         [840]   
+  build/iphone/Classes/YahooModule.h                                                                                       [632]   
+  build/iphone/Classes/YahooModule.m                                                                                       [5977]  
+  build/iphone/Classes/AFOpenFlow/AFItemView.h                                                                             [1844]  
+  build/iphone/Classes/AFOpenFlow/AFItemView.m                                                                             [2977]  
+  build/iphone/Classes/AFOpenFlow/AFOpenFlowConstants.h                                                                    [1368]  
+  build/iphone/Classes/AFOpenFlow/AFOpenFlowView.h                                                                         [2919]  
+  build/iphone/Classes/AFOpenFlow/AFOpenFlowView.m                                                                         [17033] 
+  build/iphone/Classes/AFOpenFlow/AFUIImageReflection.h                                                                    [1568]  
+  build/iphone/Classes/AFOpenFlow/AFUIImageReflection.m                                                                    [4511]  
+  build/iphone/Classes/AFOpenFlow/UIImageExtras.h                                                                          [1542]  
+  build/iphone/Classes/AFOpenFlow/UIImageExtras.m                                                                          [3115]  
+  build/iphone/Classes/ASI/ASIAuthenticationDialog.h                                                                       [1107]  
+  build/iphone/Classes/ASI/ASIAuthenticationDialog.m                                                                       [15856] 
+  build/iphone/Classes/ASI/ASICacheDelegate.h                                                                              [5151]  
+  build/iphone/Classes/ASI/ASIDataCompressor.h                                                                             [1836]  
+  build/iphone/Classes/ASI/ASIDataCompressor.m                                                                             [6730]  
+  build/iphone/Classes/ASI/ASIDataDecompressor.h                                                                           [1699]  
+  build/iphone/Classes/ASI/ASIDataDecompressor.m                                                                           [6406]  
+  build/iphone/Classes/ASI/ASIDownloadCache.h                                                                              [1741]  
+  build/iphone/Classes/ASI/ASIDownloadCache.m                                                                              [17172] 
+  build/iphone/Classes/ASI/ASIFormDataRequest.h                                                                            [2693]  
+  build/iphone/Classes/ASI/ASIFormDataRequest.m                                                                            [11229] 
+  build/iphone/Classes/ASI/ASIHTTPRequest.h                                                                                [44994] 
+  build/iphone/Classes/ASI/ASIHTTPRequest.m                                                                                [184461]
+  build/iphone/Classes/ASI/ASIHTTPRequestConfig.h                                                                          [1144]  
+  build/iphone/Classes/ASI/ASIHTTPRequestDelegate.h                                                                        [1598]  
+  build/iphone/Classes/ASI/ASIInputStream.h                                                                                [969]   
+  build/iphone/Classes/ASI/ASIInputStream.m                                                                                [3092]  
+  build/iphone/Classes/ASI/ASINetworkQueue.h                                                                               [4621]  
+  build/iphone/Classes/ASI/ASINetworkQueue.m                                                                               [11405] 
+  build/iphone/Classes/ASI/ASIProgressDelegate.h                                                                           [1656]  
+  build/iphone/Classes/ASI/Reachability.h                                                                                  [7424]  
+  build/iphone/Classes/ASI/Reachability.m                                                                                  [24137] 
+  build/iphone/Classes/AudioStreamer/AudioStreamer.h                                                                       [4486]  
+  build/iphone/Classes/AudioStreamer/AudioStreamer.m                                                                       [6253]  
+  build/iphone/Classes/AudioStreamer/AudioStreamerBC.h                                                                     [2625]  
+  build/iphone/Classes/AudioStreamer/AudioStreamerBC.m                                                                     [36876] 
+  build/iphone/Classes/AudioStreamer/AudioStreamerCUR.h                                                                    [3844]  
+  build/iphone/Classes/AudioStreamer/AudioStreamerCUR.m                                                                    [43643] 
+  build/iphone/Classes/FBConnect/Facebook.h                                                                                [3923]  
+  build/iphone/Classes/FBConnect/Facebook.m                                                                                [23825] 
+  build/iphone/Classes/FBConnect/FBConnect.h                                                                               [737]   
+  build/iphone/Classes/FBConnect/FBDialog.h                                                                                [4628]  
+  build/iphone/Classes/FBConnect/FBDialog.m                                                                                [22339] 
+  build/iphone/Classes/FBConnect/FBLoginButton.h                                                                           [1155]  
+  build/iphone/Classes/FBConnect/FBLoginButton.m                                                                           [2378]  
+  build/iphone/Classes/FBConnect/FBLoginDialog.h                                                                           [1432]  
+  build/iphone/Classes/FBConnect/FBLoginDialog.m                                                                           [3824]  
+  build/iphone/Classes/FBConnect/FBRequest.h                                                                               [3408]  
+  build/iphone/Classes/FBConnect/FBRequest.m                                                                               [11453] 
+  build/iphone/Classes/JSON/JSON.h                                                                                         [2296]  
+  build/iphone/Classes/JSON/MASS-TODO                                                                                      [521]   
+  build/iphone/Classes/JSON/NSObject+SBJSON.h                                                                              [2653]  
+  build/iphone/Classes/JSON/NSObject+SBJSON.m                                                                              [2242]  
+  build/iphone/Classes/JSON/NSString+SBJSON.h                                                                              [2354]  
+  build/iphone/Classes/JSON/NSString+SBJSON.m                                                                              [2209]  
+  build/iphone/Classes/JSON/SBJSON.h                                                                                       [2837]  
+  build/iphone/Classes/JSON/SBJSON.m                                                                                       [6878]  
+  build/iphone/Classes/JSON/SBJsonBase.h                                                                                   [2978]  
+  build/iphone/Classes/JSON/SBJsonBase.m                                                                                   [2787]  
+  build/iphone/Classes/JSON/SBJsonParser.h                                                                                 [3121]  
+  build/iphone/Classes/JSON/SBJsonParser.m                                                                                 [14064] 
+  build/iphone/Classes/JSON/SBJsonWriter.h                                                                                 [4456]  
+  build/iphone/Classes/JSON/SBJsonWriter.m                                                                                 [8006]  
+  build/iphone/Classes/MGSplitView/MGSplitCornersView.h                                                                    [1228]  
+  build/iphone/Classes/MGSplitView/MGSplitCornersView.m                                                                    [6127]  
+  build/iphone/Classes/MGSplitView/MGSplitDividerView.h                                                                    [619]   
+  build/iphone/Classes/MGSplitView/MGSplitDividerView.m                                                                    [5359]  
+  build/iphone/Classes/MGSplitView/MGSplitView.h                                                                           [702]   
+  build/iphone/Classes/MGSplitView/MGSplitView.m                                                                           [1302]  
+  build/iphone/Classes/MGSplitView/MGSplitViewController.h                                                                 [7795]  
+  build/iphone/Classes/MGSplitView/MGSplitViewController.m                                                                 [34368] 
+  build/iphone/Classes/PlausibleDatabase/PlausibleDatabase.h                                                               [8516]  
+  build/iphone/Classes/PlausibleDatabase/PlausibleDatabase.m                                                               [4105]  
+  build/iphone/Classes/PlausibleDatabase/PLDatabase.h                                                                      [8453]  
+  build/iphone/Classes/PlausibleDatabase/PLPreparedStatement.h                                                             [5314]  
+  build/iphone/Classes/PlausibleDatabase/PLResultSet.h                                                                     [7985]  
+  build/iphone/Classes/PlausibleDatabase/PLSqliteDatabase.h                                                                [2431]  
+  build/iphone/Classes/PlausibleDatabase/PLSqliteDatabase.m                                                                [15411] 
+  build/iphone/Classes/PlausibleDatabase/PLSqlitePreparedStatement.h                                                       [2533]  
+  build/iphone/Classes/PlausibleDatabase/PLSqlitePreparedStatement.m                                                       [15247] 
+  build/iphone/Classes/PlausibleDatabase/PLSqliteResultSet.h                                                               [2264]  
+  build/iphone/Classes/PlausibleDatabase/PLSqliteResultSet.m                                                               [11134] 
+  build/iphone/headers/TiCore/Ti.h                                                                                         [1820]  
+  build/iphone/headers/TiCore/TiBase.h                                                                                     [6325]  
+  build/iphone/headers/TiCore/TiContextRef.h                                                                               [5336]  
+  build/iphone/headers/TiCore/TiContextRefPrivate.h                                                                        [2144]  
+  build/iphone/headers/TiCore/TiCore.h                                                                                     [1691]  
+  build/iphone/headers/TiCore/TiObjectRef.h                                                                                [37981] 
+  build/iphone/headers/TiCore/TiStringRef.h                                                                                [5861]  
+  build/iphone/headers/TiCore/TiStringRefCF.h                                                                              [2619]  
+  build/iphone/headers/TiCore/TiValueRef.h                                                                                 [12854] 
+  build/iphone/headers/TiCore/WebKitAvailability.h                                                                         [32972] 
+  build/iphone/lib/libti_ios_debugger.a                                                                                    [3593644]
+  build/iphone/lib/libTiCore.a                                                                                             [196179284]
+  build/iphone/lib/libtiverify.a                                                                                           [379668]
+  build/iphone/Resources/.version                                                                                          [158]   
+  build/iphone/Resources/appicon.png                                                                                       [4275]  
+  build/iphone/Resources/debugger.plist                                                                                    [260]   
+  build/iphone/Resources/Default-Landscape.png                                                                             [517419]
+  build/iphone/Resources/Default-Portrait.png                                                                              [551670]
+  build/iphone/Resources/Default.png                                                                                       [114262]
+  build/iphone/Resources/Default@2x.png                                                                                    [380255]
+  build/iphone/Resources/Entitlements.plist                                                                                [227]   
+  build/iphone/Resources/stylesheet.plist                                                                                  [132]   
+  build/iphone/ShopBrag.xcodeproj/project.pbxproj                                                                          [393078]
+  build/mobileweb/ADDRESSES.xls                                                                                            [77312] 
+  build/mobileweb/app.js                                                                                                   [22972] 
+  build/mobileweb/BB 30 x 30 Tab Icon (1).png                                                                              [3802]  
+  build/mobileweb/BB 60 x 60 Tab Icon (1).png                                                                              [4530]  
+  build/mobileweb/bg.png                                                                                                   [211027]
+  build/mobileweb/card.png                                                                                                 [317691]
+  build/mobileweb/eventdriven.js                                                                                           [939]   
+  build/mobileweb/index.html                                                                                               [253106]
+  build/mobileweb/iTunesArtwork                                                                                            [274041]
+  build/mobileweb/KS_nav_ui.png                                                                                            [1158]  
+  build/mobileweb/KS_nav_views.png                                                                                         [1074]  
+  build/mobileweb/logo.png                                                                                                 [38338] 
+  build/mobileweb/SAMPLEADDRESSES.xls                                                                                      [36864] 
+  build/mobileweb/tab1.png                                                                                                 [2775]  
+  build/mobileweb/tab1@2x.png                                                                                              [6430]  
+  build/mobileweb/titanium.css                                                                                             [2300]  
+  build/mobileweb/android/appicon.png                                                                                      [11039] 
+  build/mobileweb/android/default.png                                                                                      [16529] 
+  build/mobileweb/android/images/res-long-land-hdpi/default.png                                                            [102971]
+  build/mobileweb/android/images/res-long-land-ldpi/default.png                                                            [34784] 
+  build/mobileweb/android/images/res-long-port-hdpi/default.png                                                            [125025]
+  build/mobileweb/android/images/res-long-port-ldpi/default.png                                                            [47541] 
+  build/mobileweb/android/images/res-notlong-land-hdpi/default.png                                                         [102971]
+  build/mobileweb/android/images/res-notlong-land-ldpi/default.png                                                         [37038] 
+  build/mobileweb/android/images/res-notlong-land-mdpi/default.png                                                         [53422] 
+  build/mobileweb/android/images/res-notlong-port-hdpi/default.png                                                         [125025]
+  build/mobileweb/android/images/res-notlong-port-ldpi/default.png                                                         [30377] 
+  build/mobileweb/android/images/res-notlong-port-mdpi/default.png                                                         [53982] 
+  build/mobileweb/images/bg.png                                                                                            [229884]
+  build/mobileweb/images/call.png                                                                                          [7720]  
+  build/mobileweb/images/call@2x.png                                                                                       [22379] 
+  build/mobileweb/images/close.png                                                                                         [5567]  
+  build/mobileweb/images/close@2x.png                                                                                      [7963]  
+  build/mobileweb/images/directions.png                                                                                    [3466]  
+  build/mobileweb/images/mail.png                                                                                          [5329]  
+  build/mobileweb/images/mail@2x.png                                                                                       [14673] 
+  build/mobileweb/images/map.png                                                                                           [8464]  
+  build/mobileweb/images/map@2x.png                                                                                        [24558] 
+  build/mobileweb/images/money.png                                                                                         [3228]  
+  build/mobileweb/images/safari.png                                                                                        [7573]  
+  build/mobileweb/images/safari@2x.png                                                                                     [21736] 
+  build/mobileweb/iphone/appicon-72.png                                                                                    [12733] 
+  build/mobileweb/iphone/appicon.png                                                                                       [8671]  
+  build/mobileweb/iphone/appicon@2x.png                                                                                    [23534] 
+  build/mobileweb/iphone/Default-Landscape.png                                                                             [517419]
+  build/mobileweb/iphone/Default-Portrait.png                                                                              [551670]
+  build/mobileweb/iphone/Default.png                                                                                       [338415]
+  build/mobileweb/iphone/Default@2x.png                                                                                    [951288]
+  build/mobileweb/Ti/Accelerometer.js                                                                                      [870]   
+  build/mobileweb/Ti/Analytics.js                                                                                          [924]   
+  build/mobileweb/Ti/API.js                                                                                                [305]   
+  build/mobileweb/Ti/App.js                                                                                                [414]   
+  build/mobileweb/Ti/Blob.js                                                                                               [252]   
+  build/mobileweb/Ti/Contacts.js                                                                                           [1810]  
+  build/mobileweb/Ti/Database.js                                                                                           [447]   
+  build/mobileweb/Ti/Facebook.js                                                                                           [5019]  
+  build/mobileweb/Ti/Filesystem.js                                                                                         [1130]  
+  build/mobileweb/Ti/Geolocation.js                                                                                        [4147]  
+  build/mobileweb/Ti/Gesture.js                                                                                            [2182]  
+  build/mobileweb/Ti/Locale.js                                                                                             [2751]  
+  build/mobileweb/Ti/Map.js                                                                                                [528]   
+  build/mobileweb/Ti/Media.js                                                                                              [1597]  
+  build/mobileweb/Ti/Network.js                                                                                            [2803]  
+  build/mobileweb/Ti/package.json                                                                                          [570]   
+  build/mobileweb/Ti/Platform.js                                                                                           [1388]  
+  build/mobileweb/Ti/ti.js                                                                                                 [510]   
+  build/mobileweb/Ti/UI.js                                                                                                 [6527]  
+  build/mobileweb/Ti/Utils.js                                                                                              [9481]  
+  build/mobileweb/Ti/XML.js                                                                                                [3184]  
+  build/mobileweb/Ti/Yahoo.js                                                                                              [273]   
+  build/mobileweb/Ti/_/Evented.js                                                                                          [860]   
+  build/mobileweb/Ti/_/include.js                                                                                          [1172]  
+  build/mobileweb/Ti/_/Layouts.js                                                                                          [235]   
+  build/mobileweb/Ti/_/Gestures/DoubleTap.js                                                                               [1784]  
+  build/mobileweb/Ti/_/Gestures/GestureRecognizer.js                                                                       [643]   
+  build/mobileweb/Ti/_/Gestures/LongPress.js                                                                               [1809]  
+  build/mobileweb/Ti/_/Gestures/Pinch.js                                                                                   [3702]  
+  build/mobileweb/Ti/_/Gestures/SingleTap.js                                                                               [1408]  
+  build/mobileweb/Ti/_/Gestures/Swipe.js                                                                                   [3122]  
+  build/mobileweb/Ti/_/Gestures/TouchCancel.js                                                                             [565]   
+  build/mobileweb/Ti/_/Gestures/TouchEnd.js                                                                                [553]   
+  build/mobileweb/Ti/_/Gestures/TouchMove.js                                                                               [557]   
+  build/mobileweb/Ti/_/Gestures/TouchStart.js                                                                              [561]   
+  build/mobileweb/Ti/_/Gestures/TwoFingerTap.js                                                                            [5101]  
+  build/mobileweb/Ti/_/Layouts/Absolute.js                                                                                 [925]   
+  build/mobileweb/Ti/_/Layouts/Base.js                                                                                     [504]   
+  build/mobileweb/Ti/_/Layouts/Horizontal.js                                                                               [952]   
+  build/mobileweb/Ti/_/Layouts/Vertical.js                                                                                 [939]   
+  build/mobileweb/Ti/_/UI/Element.js                                                                                       [20624] 
+  build/mobileweb/Ti/_/UI/FontWidget.js                                                                                    [1961]  
+  build/mobileweb/Ti/_/UI/SuperView.js                                                                                     [2121]  
+  build/mobileweb/Ti/_/UI/TextBox.js                                                                                       [2659]  
+  build/mobileweb/Ti/_/UI/Widget.js                                                                                        [219]   
+  build/mobileweb/Ti/App/Properties.js                                                                                     [2914]  
+  build/mobileweb/Ti/Contacts/Group.js                                                                                     [669]   
+  build/mobileweb/Ti/Contacts/Person.js                                                                                    [660]   
+  build/mobileweb/Ti/Database/DB.js                                                                                        [2087]  
+  build/mobileweb/Ti/Database/ResultSet.js                                                                                 [1336]  
+  build/mobileweb/Ti/Facebook/LoginButton.js                                                                               [581]   
+  build/mobileweb/Ti/Filesystem/File.js                                                                                    [3351]  
+  build/mobileweb/Ti/Map/Annotation.js                                                                                     [428]   
+  build/mobileweb/Ti/Map/MapView.js                                                                                        [2508]  
+  build/mobileweb/Ti/Media/AudioPlayer.js                                                                                  [1620]  
+  build/mobileweb/Ti/Media/AudioRecorder.js                                                                                [818]   
+  build/mobileweb/Ti/Media/Item.js                                                                                         [558]   
+  build/mobileweb/Ti/Media/Sound.js                                                                                        [2474]  
+  build/mobileweb/Ti/Media/VideoPlayer.js                                                                                  [7576]  
+  build/mobileweb/Ti/Network/HTTPClient.js                                                                                 [4209]  
+  build/mobileweb/Ti/Platform/DisplayCaps.js                                                                               [835]   
+  build/mobileweb/Ti/UI/2DMatrix.js                                                                                        [2264]  
+  build/mobileweb/Ti/UI/ActivityIndicator.js                                                                               [1811]  
+  build/mobileweb/Ti/UI/AlertDialog.js                                                                                     [2567]  
+  build/mobileweb/Ti/UI/Animation.js                                                                                       [633]   
+  build/mobileweb/Ti/UI/Button.js                                                                                          [5610]  
+  build/mobileweb/Ti/UI/ImageView.js                                                                                       [4610]  
+  build/mobileweb/Ti/UI/Label.js                                                                                           [3364]  
+  build/mobileweb/Ti/UI/ScrollableView.js                                                                                  [11979] 
+  build/mobileweb/Ti/UI/ScrollView.js                                                                                      [2737]  
+  build/mobileweb/Ti/UI/Slider.js                                                                                          [5714]  
+  build/mobileweb/Ti/UI/Switch.js                                                                                          [2100]  
+  build/mobileweb/Ti/UI/Tab.js                                                                                             [2296]  
+  build/mobileweb/Ti/UI/TabGroup.js                                                                                        [2842]  
+  build/mobileweb/Ti/UI/TableView.js                                                                                       [5744]  
+  build/mobileweb/Ti/UI/TableViewRow.js                                                                                    [3845]  
+  build/mobileweb/Ti/UI/TableViewSection.js                                                                                [1946]  
+  build/mobileweb/Ti/UI/TextArea.js                                                                                        [840]   
+  build/mobileweb/Ti/UI/TextField.js                                                                                       [2409]  
+  build/mobileweb/Ti/UI/View.js                                                                                            [1381]  
+  build/mobileweb/Ti/UI/WebView.js                                                                                         [2783]  
+  build/mobileweb/Ti/UI/Window.js                                                                                          [1814]  
+  build/mobileweb/titanium/i18n.js                                                                                         [30]    
+  build/mobileweb/titanium/titanium.css                                                                                    [2486]  
+  build/mobileweb/titanium/titanium.js                                                                                     [249402]
+  PDFtoPNG.workflow/Contents/document.wflow                                                                                [24336] 
+  PDFtoPNG.workflow/Contents/QuickLook/Preview.png                                                                         [102002]
+  Resources/.DS_Store                                                                                                      [12292] 
+  Resources/ADDRESSES.xls                                                                                                  [77312] 
+  Resources/app.js                                                                                                         [36760] 
+  Resources/bg.png                                                                                                         [213783]
+  Resources/bottom.png                                                                                                     [138505]
+  Resources/button.png                                                                                                     [11857] 
+  Resources/buttonDOWN.png                                                                                                 [11856] 
+  Resources/card.jpg                                                                                                       [712605]
+  Resources/coupons.json                                                                                                   [11817] 
+  Resources/iTunesArtwork                                                                                                  [274041]
+  Resources/loading.png                                                                                                    [189611]
+  Resources/logo.png                                                                                                       [38338] 
+  Resources/scroll.js                                                                                                      [5194]  
+  Resources/tab.png                                                                                                        [7627]  
+  Resources/tab@2x.png                                                                                                     [15715] 
+  Resources/tabBG.png                                                                                                      [8449]  
+  Resources/tabBG@2x.png                                                                                                   [19237] 
+  Resources/top.png                                                                                                        [39196] 
+  Resources/top@2x.png                                                                                                     [121753]
+  Resources/android/.DS_Store                                                                                              [6148]  
+  Resources/android/appicon.png                                                                                            [11039] 
+  Resources/android/default.png                                                                                            [16529] 
+  Resources/android/images/res-long-land-hdpi/default.png                                                                  [102971]
+  Resources/android/images/res-long-land-ldpi/default.png                                                                  [34784] 
+  Resources/android/images/res-long-port-hdpi/default.png                                                                  [125025]
+  Resources/android/images/res-long-port-ldpi/default.png                                                                  [47541] 
+  Resources/android/images/res-notlong-land-hdpi/default.png                                                               [102971]
+  Resources/android/images/res-notlong-land-ldpi/default.png                                                               [37038] 
+  Resources/android/images/res-notlong-land-mdpi/default.png                                                               [53422] 
+  Resources/android/images/res-notlong-port-hdpi/default.png                                                               [125025]
+  Resources/android/images/res-notlong-port-ldpi/default.png                                                               [30377] 
+  Resources/android/images/res-notlong-port-mdpi/default.png                                                               [53982] 
+  Resources/images/bg.png                                                                                                  [229884]
+  Resources/images/call.png                                                                                                [7720]  
+  Resources/images/call@2x.png                                                                                             [22379] 
+  Resources/images/close.png                                                                                               [5567]  
+  Resources/images/close@2x.png                                                                                            [7963]  
+  Resources/images/directions.png                                                                                          [2711]  
+  Resources/images/directions@2x.png                                                                                       [4352]  
+  Resources/images/mail.png                                                                                                [5329]  
+  Resources/images/mail@2x.png                                                                                             [14673] 
+  Resources/images/map.png                                                                                                 [8464]  
+  Resources/images/map@2x.png                                                                                              [24558] 
+  Resources/images/money.png                                                                                               [2828]  
+  Resources/images/money@2x.png                                                                                            [3772]  
+  Resources/images/safari.png                                                                                              [7573]  
+  Resources/images/safari@2x.png                                                                                           [21736] 
+  Resources/iphone/.DS_Store                                                                                               [6148]  
+  Resources/iphone/appicon-72.png                                                                                          [12733] 
+  Resources/iphone/appicon.png                                                                                             [8671]  
+  Resources/iphone/appicon@2x.png                                                                                          [23534] 
+  Resources/iphone/Default-Landscape.png                                                                                   [517419]
+  Resources/iphone/Default-Portrait.png                                                                                    [551670]
+  Resources/iphone/Default.png                                                                                             [320430]
+  Resources/iphone/Default@2x.png                                                                                          [1038682]
+----------------------------------------------------------------------------------------------------------------------------------
+Total files: 213.0 MB
+
+Contents of Info.plist
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>appicon.png</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.shopbrag.app</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>shopbrag</string>
+				
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.shopbrag.app</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.1329457673</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+        <key>CFBundleIconFiles</key>
+        <array>
+	<string>appicon.png</string>
+	<string>appicon@2x.png</string>
+	<string>appicon-72.png</string>
+</array>
+
+        <key>UISupportedInterfaceOrientations</key>
+        <array>
+	<string>UIInterfaceOrientationPortrait</string>
+	</array>
+        <key>UIStatusBarHidden</key>
+        <true/>
+        <key>UIStatusBarStyle</key>
+        <string>UIStatusBarStyleBlackOpaque</string>
+</dict>
+</plist>
+
+==================================================================================================================================
+
+Generated the following entitlements:
+
+<?xml version="1.0" encoding="UTF-8"?> 	
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+<key>get-task-allow</key>
+		<true/>
+	</dict>
+</plist>
+
+Starting Xcode compile with the following arguments:
+
+    xcodebuild
+    -target
+    ShopBrag
+    -configuration
+    Debug
+    -sdk
+    iphoneos4.3
+    CODE_SIGN_ENTITLEMENTS=Resources/Entitlements.plist
+    GCC_PREPROCESSOR_DEFINITIONS=DEPLOYTYPE=test TI_TEST=1  
+    PROVISIONING_PROFILE=F08BF6B7-6814-4C6E-ABD7-415DC9D075D1
+    CODE_SIGN_IDENTITY=iPhone Developer: Alan Leard (MFBVN3N397)
+    DEPLOYMENT_POSTPROCESSING=YES
+    IPHONEOS_DEPLOYMENT_TARGET=4.0
+    TARGETED_DEVICE_FAMILY=1
+
+app_id = com.shopbrag.app
+
+

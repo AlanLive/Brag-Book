@@ -345,10 +345,13 @@ for (var i=0; i<tabGroup.tabs.length; i++){
 		height:'auto',
 		bottom:3
 	});
-	
+	if(i==0){
+		tabImage.image = 'tabBG.png';
+	}
 	tabView.add(tabImage);
 	tabView.add(tabLabel);
 	nav.add(tabView);	
+	
 }
 
 tabGroup.add(nav);
@@ -373,6 +376,7 @@ card.addEventListener('click', function(){
 	nav.animate(fade_in);
 });
 win1.addEventListener('focus', function(){
+	//alert('focus');
 	nav.children[0].children[0].image = 'tabBG.png';
 });
 win2.addEventListener('focus', function(){
@@ -430,7 +434,15 @@ function buildAnnotations(e){
 buildAnnotations(data);
 
 function buildMagazine(){
+
 	
+	if(Ti.Network.online){
+	if (win4.children) {
+        for (var c = win4.children.length - 1; c >= 0; c--) {
+            win4.remove(win4.children[c]);
+        }
+    }
+
 	if(win4.children){
 		//alert('remove');
 		win4.remove(win4.children[0]);
@@ -448,6 +460,13 @@ function buildMagazine(){
 		height:'auto',
 		width:'auto'
 	});
+	var magInd = Ti.UI.createActivityIndicator({
+		bottom:40,
+		message:'Loading Pages...',
+		color:'white',
+		height:'auto',
+		width:'auto'
+	});
 	var loadingImage = Ti.UI.createImageView({
 			image:'loading.png',
 			top:0,
@@ -457,7 +476,7 @@ function buildMagazine(){
 	win4.add(loadingImage);
 	win4.add(magInd);
 	magInd.show();
-	for (var i = Ti.App.Properties.getInt('maglength'); i>0; i++){
+	for (var i = 1; i<Ti.App.Properties.getInt('maglength'); i++){
 	
 		var magview = Ti.UI.createImageView({
 			image:Ti.App.Properties.getString('magURL')+'/mag'+i+'.png',
@@ -471,7 +490,7 @@ function buildMagazine(){
 			left:0,
 			right:0,
 			contentHeight:'auto',
-			contentWidth:'auto',
+			contentWidth:Ti.Platform.displayCaps.platformWidth,
 			minZoomScale:1.0,
 			maxZoomScale:3.0,
 			zoomScale:1.0,
@@ -483,7 +502,7 @@ function buildMagazine(){
 		sviews.push(scroll);
 	}
 	scrollable.views = sviews;
-	
+	//Ti.include('scroll.js');
 	win4.add(scrollable);
 	var header = Ti.UI.createImageView({
 		image:'top.png',
@@ -516,12 +535,32 @@ function buildMagazine(){
 	});
 	win4.add(pages);
 	scrollable.addEventListener('scroll', function(e){
+		
 		if(e.currentPage){
-			var page = e.currentPage + 1;
+			var page = e.currentPage+1;
 			pages.text = page+' of '+Ti.App.Properties.getInt('maglength');
+		}
+		if(e.currentPage > 2){
+			//alert('cut');
+			//scrollable.views[0].remove( scrollable.views[0].children[0]);
+			scrollable.views[e.currentPage-2].children[0]=null;
 		}
 	});
 	Ti.App.fireEvent('UpdateComplete');
+	} else {
+		var alertDialog = Titanium.UI.createAlertDialog({
+		    title: 'Brag Book Magazine',
+		    message: 'Sorry, you need an internet connection to view the magazine!',
+		    buttonNames: ['OK','Try Again'],
+		    cancel:0
+		});
+		alertDialog.show();
+		alertDialog.addEventListener('click', function(e){
+			if(e.index = 1){
+				buildMagazine();
+			}
+		});
+	}
 }
 buildMagazine();
 
@@ -605,7 +644,7 @@ function createCoupons(i){
 			bottom:10,
 			height:50,
 			layout:'horizontal'
-		})
+		});
         var phoneIcon = Ti.UI.createImageView({
     		image:'images/call.png', 
     		height:'50', 
@@ -980,4 +1019,5 @@ Ti.App.addEventListener('resume', function(){
 });
 
 webcheck();
+
 
