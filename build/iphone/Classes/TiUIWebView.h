@@ -24,14 +24,12 @@
 	//TODO: make more elegant
 	BOOL ignoreNextRequest;
 	id reloadData;
-    id reloadDataProperties;
 	SEL reloadMethod;
 }
 
 @property(nonatomic,readonly) id url;
 @property(nonatomic,readonly) id loading;
 @property(nonatomic,readwrite,retain) id reloadData;
-@property(nonatomic,readwrite,retain) id reloadDataProperties;
 
 -(void)evalJS:(NSArray*)args;
 -(id)evalJSAndWait:(NSString *)code;
@@ -39,7 +37,7 @@
 
 -(void)canGoBack:(NSMutableArray*)result;
 -(void)canGoForward:(NSMutableArray*)result;
--(void)setHtml_:(NSString*)content withObject:(id)property;
+
 
 @end
 

@@ -22,7 +22,6 @@
 	if (self != nil)
 	{
 		suppressReturn = YES;
-        [self textWidgetView];
 	}
 	return self;
 }

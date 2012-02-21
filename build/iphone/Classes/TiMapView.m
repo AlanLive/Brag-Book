@@ -648,7 +648,10 @@
 		static NSString *identifier = @"timap";
 		MKAnnotationView *annView = nil;
 		
-		annView = (MKAnnotationView*) [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+		if (![ann needsRefreshingWithSelection])
+		{
+			annView = (MKAnnotationView*) [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+		}
 		if (annView==nil)
 		{
 			id imagePath = [ann valueForUndefinedKey:@"image"];

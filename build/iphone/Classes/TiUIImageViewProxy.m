@@ -58,10 +58,9 @@ static NSArray* imageKeySequence;
 
 -(void)start:(id)args
 {
-    TiThreadPerformOnMainThread(^{
-        TiUIImageView *iv = (TiUIImageView*)[self view];
-        [iv start];
-    }, NO);
+	ENSURE_UI_THREAD(start,args);
+	TiUIImageView *iv= (TiUIImageView*)[self view];
+	[iv start];
 }
 
 -(void)stop:(id)args
@@ -81,18 +80,9 @@ static NSArray* imageKeySequence;
 
 -(void)pause:(id)args
 {
-    TiThreadPerformOnMainThread(^{
-        TiUIImageView *iv = (TiUIImageView*)[self view];
-        [iv pause];
-    }, NO);
-}
-
--(void)resume:(id)args
-{
-    TiThreadPerformOnMainThread(^{
-        TiUIImageView *iv = (TiUIImageView*)[self view];
-        [iv resume];
-    }, NO);
+	ENSURE_UI_THREAD(pause,args);
+	TiUIImageView *iv= (TiUIImageView*)[self view];
+	[iv pause];
 }
 
 -(void)viewWillDetach

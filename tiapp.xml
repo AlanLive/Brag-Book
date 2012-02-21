@@ -7,11 +7,11 @@
         <target device="android">true</target>
         <target device="blackberry">false</target>
     </deployment-targets>
-    <sdk-version>1.9.0.v20120130214634</sdk-version>
+    <sdk-version>1.8.1</sdk-version>
     <id>com.shopbrag.app</id>
-    <name>ShopBrag</name>
+    <name>Shop Brag</name>
     <version>1.0</version>
-    <publisher>alanleard</publisher>
+    <publisher>Brag Book Magazine</publisher>
     <url>http://bragbookmagazine.com</url>
     <description>not specified</description>
     <copyright>2012 by alanleard</copyright>
@@ -20,7 +20,7 @@
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>opaque</statusbar-style>
     <statusbar-hidden>true</statusbar-hidden>
-    <fullscreen>false</fullscreen>
+    <fullscreen>true</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
     <guid>e0afe677-4e5d-4086-bc52-590632f29672</guid>
