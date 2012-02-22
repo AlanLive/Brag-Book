@@ -1,4 +1,4 @@
-#Thu Feb 16 17:05:37 PST 2012
+#Tue Feb 21 23:45:45 PST 2012
 eclipse.preferences.version=1
 provisioning_profiles/development/275768B3-AF0A-4E21-9853-F0C8ECFD199A/appid=com.shopbrag.app
 provisioning_profiles/development/275768B3-AF0A-4E21-9853-F0C8ECFD199A/filepath=/Users/alanleard/Downloads/ShopBrag.mobileprovision
@@ -12,3 +12,7 @@ provisioning_profiles/development/F08BF6B7-6814-4C6E-ABD7-415DC9D075D1/appid=com
 provisioning_profiles/development/F08BF6B7-6814-4C6E-ABD7-415DC9D075D1/filepath=/Users/alanleard/Downloads/ShopBrag (2).mobileprovision
 provisioning_profiles/development/F08BF6B7-6814-4C6E-ABD7-415DC9D075D1/name=ShopBrag
 provisioning_profiles/development/F08BF6B7-6814-4C6E-ABD7-415DC9D075D1/uuid=F08BF6B7-6814-4C6E-ABD7-415DC9D075D1
+provisioning_profiles/distribution/77B98D12-852B-4665-9033-DE50F36A3D32/appid=com.shopbrag.app
+provisioning_profiles/distribution/77B98D12-852B-4665-9033-DE50F36A3D32/filepath=/Users/alanleard/Downloads/Shop_Brag.mobileprovision
+provisioning_profiles/distribution/77B98D12-852B-4665-9033-DE50F36A3D32/name=Shop Brag
+provisioning_profiles/distribution/77B98D12-852B-4665-9033-DE50F36A3D32/uuid=77B98D12-852B-4665-9033-DE50F36A3D32

@@ -199,7 +199,7 @@ TI_INLINE void waitForMemoryPanicCleared();   //WARNING: This must never be run 
 
 - (void)boot
 {
-	NSLog(@"[INFO] %@/%@ (%s.a24502a)",TI_APPLICATION_NAME,TI_APPLICATION_VERSION,TI_VERSION_STR);
+	NSLog(@"[INFO] %@/%@ (%s.9db4995)",TI_APPLICATION_NAME,TI_APPLICATION_VERSION,TI_VERSION_STR);
 	
 	sessionId = [[TiUtils createUUID] retain];
 	TITANIUM_VERSION = [[NSString stringWithCString:TI_VERSION_STR encoding:NSUTF8StringEncoding] retain];
@@ -423,6 +423,9 @@ TI_INLINE void waitForMemoryPanicCleared();   //WARNING: This must never be run 
 
 -(void)applicationWillEnterForeground:(UIApplication *)application
 {
+    [sessionId release];
+    sessionId = [[TiUtils createUUID] retain];
+    
 	[[NSNotificationCenter defaultCenter] postNotificationName:kTiResumeNotification object:self];
 	
 	[TiUtils queueAnalytics:@"ti.foreground" name:@"ti.foreground" data:nil];

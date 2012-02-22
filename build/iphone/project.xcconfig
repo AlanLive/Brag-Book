@@ -1,4 +1,4 @@
-TI_VERSION=1.8.1
+TI_VERSION=1.9.0.v20120130214634
 TI_SDK_DIR=/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION)/iphone
 TI_APPID=com.shopbrag.app
 OTHER_LDFLAGS[sdk=iphoneos*]=$(inherited) -weak_framework iAd
